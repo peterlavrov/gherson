@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'CochinRegular';
+  src: url("../fonts/CochinRegular.woff2") format("woff2"), url("../fonts/CochinRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'DidactGothic';
+  src: url("../fonts/DidactGothic-Regular.woff2") format("woff2"), url("../fonts/DidactGothic-Regular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'FA5BRegular';
+  src: url("../fonts/FontAwesome5BrandsRegular.woff2") format("woff2"), url("../fonts/FontAwesome5BrandsRegular.woff") format("woff"); }
+
+@font-face {
+  font-family: 'FA5PLight';
+  src: url("../fonts/FontAwesome5ProLight.woff2") format("woff2"), url("../fonts/FontAwesome5ProLight.woff") format("woff"); }
