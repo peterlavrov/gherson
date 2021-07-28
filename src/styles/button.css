@@ -1,16 +1,32 @@
 .button {
   display: inline-block;
   padding: 12px 23px 13px;
-  border: 1px solid #fff;
   font-family: "RobotoLight";
   font-size: 16px;
+}
+
+.home-slider .button {
+  border: 1px solid #fff;
   color: #fff;
 }
-.button:hover {
+.home-slider .button:hover {
   color: #e9e9e9;
   border: 1px solid #e9e9e9;
 }
-.button:active {
+.home-slider .button:active {
+  color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+}
+
+.home-feedback__button {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.home-feedback__button:hover {
+  color: #e9e9e9;
+  border: 1px solid #e9e9e9;
+}
+.home-feedback__button:active {
   color: #e9e9e9;
   border: 1px solid #e9e9e9;
 }

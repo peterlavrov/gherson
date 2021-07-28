@@ -11,6 +11,12 @@
       font-family: 'RobotoLight';
       font-size: 18px;
       color: $home_link_color;
+      &:hover {
+        color: $delimeter_color;
+      }
+      &:active {
+        color: $delimeter_color;
+      }
     }
   }
 }

@@ -3,4 +3,12 @@
 
 .home-contacts__phone {
   @include contacts_phone;
+  color: $home_link_color;
+  &:hover {
+    color: $delimeter_color;
+  }
+
+  &:active {
+    color: $delimeter_color;
+  }
 }
