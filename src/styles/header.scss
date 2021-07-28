@@ -1,0 +1,23 @@
+@import url(./logo.css);
+@import url(./menu.css);
+
+.home-header {
+  &__navigation {
+    display: flex;
+    width: 44.6%;
+  }
+
+  &__logo {
+    padding-right: 152px;
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center ;
+  }
+
+  &__feedback {
+    display: flex;
+    align-items: center ;
+  }
+}

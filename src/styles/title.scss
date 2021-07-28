@@ -1,0 +1,6 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
+.title {
+  @include title;
+}

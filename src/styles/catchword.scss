@@ -1,0 +1,13 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
+.catchword {
+  position: absolute;
+  left: 5.2%;
+  @include catchword;
+  writing-mode: vertical-rl;
+  transform-origin: center;
+  transform: rotate(180deg) translateX(50%);
+  z-index: 5;
+
+}

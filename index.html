@@ -5,78 +5,226 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./styles/">
+  <link rel="stylesheet" href="./src/styles/index.css">
+  <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" />
   <title>GHERSON</title>
 </head>
 
 <body>
   <div class="wrapper">
-    <section class="home">
-      <div class="home__container container">
-        <header class="home__header home-header">
-          <div class="home-header__logo">
-            <img class="home-header__image" src="./images/gherson_logo.png" alt="GHERSON logo">
+    <main class="main">
+      <section class="home">
+        <div class="home__container container">
+          <div class="vertical__line home__line"></div>
+          <div class="vertical__line home__line"></div>
+          <div class="vertical__line home__line"></div>
+          <div class="vertical__line home__line"></div>
+          <header class="home__header home-header">
+            <div class="home-header__logo">
+              <img class="home-header__image" src="./src/images/gherson_logo.png" alt="GHERSON logo">
+            </div>
+            <nav class="home-header__navigation home-navigation">
+              <ul class="home-navigation__list">
+                <li>
+                  <a href="#" tabindex="1">ABOUT US</a>
+                </li>
+                <li>
+                  <a href="#" tabindex="1">OUR PEOPLE</a>
+                </li>
+                <li>
+                  <a href="#" tabindex="1">SERVICES</a>
+                </li>
+                <li>
+                  <a href="#" tabindex="1">BLOG & NEWS</a>
+                </li>
+                <li>
+                  <a href="#" tabindex="1">CAREER</a>
+                </li>
+              </ul>
+            </nav>
+            <address class="home-header__contacts home-contacts">
+              <a href="tel://02077244488" class="home-contacts__phone" tabindex="1">(0)20 7724 4488</a>
+            </address>
+            <div class="home-header__feedback home-feedback">
+              <a href="#" class="home-feedback__button button" tabindex="1">CONTACT US</a>
+            </div>
+          </header>
+          <div class="home__slider home-slider">
+            <div class="home-slider__slides slider-slides">
+              <ul class="slider-slides__list">
+                <li class="slider-slides__slide slides-slide">
+                  <div class="slides-slide__content">
+                    <p class="slides-slide__text">Award winning, London-based independent
+                      immigration solicitors</p><a href="#" class="slides-slide__button button" tabindex="0">FIND OUT
+                      MORE</a>
+                  </div>
+                  <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
+                </li>
+                <li class="slider-slides__slide slides-slide">
+                  <div class="slides-slide__content">
+                    <p class="slides-slide__text">Award winning, London-based independent
+                      immigration solicitors</p><a href="#" class="slides-slide__button button" tabindex="0">FIND OUT
+                      MORE</a>
+                  </div>
+                  <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
+                </li>
+                <li class="slider-slides__slide slides-slide">
+                  <div class="slides-slide__content">
+                    <p class="slides-slide__text">Award winning, London-based independent
+                      immigration solicitors</p><a href="#" class="slides-slide__button button" tabindex="0">FIND OUT
+                      MORE</a>
+                  </div>
+                  <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
+                </li>
+                <li class="slider-slides__slide slides-slide">
+                  <div class="slides-slide__content">
+                    <p class="slides-slide__text">Award winning, London-based independent
+                      immigration solicitors</p><a href="#" class="slides-slide__button button">FIND OUT MORE</a>
+                  </div>
+                  <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
+                </li>
+              </ul>
+            </div>
           </div>
-          <nav class="home-header__navigation home-navigation">
-            <ul class="home-navigation__list">
-              <li class="home-navigation__item">
-                <a href="#" class="home-navigation__link">ABOUT US</a>
-              </li>
-              <li class="home-navigation__item">
-                <a href="#" class="home-navigation__link">OUR PEOPLE</a>
-              </li>
-              <li class="home-navigation__item">
-                <a href="#" class="home-navigation__link">SERVICES</a>
-              </li>
-              <li class="home-navigation__item">
-                <a href="#" class="home-navigation__link">BLOG & NEWS</a>
-              </li>
-              <li class="home-navigation__item">
-                <a href="#" class="home-navigation__link">CAREER</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="home-header__contacts home-contacts">
-            <a href="tel://02077244488" class="home-contacts__phone">(0)20 7724 4488</a>
-          </address>
-          <div class="home-header__feedback home-feedback">
-            <a href="#" class="home-feedback__button">CONTACT US</a>
-          </div>
-        </header>
-        <div class="home__slider home-slider">
-          <nav class="home-slider__navigation slider-navigation">
-            <ul class="slider-navigation__list">
-              <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-              <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-              <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-              <li class="slider-navigation__item"><a href="#" class="slider-navigation__link"></a></li>
-            </ul>
-          </nav>
-          <div class="home-slider__slides">
-            <ul class="home-slider__list">
-              <li class="home-slider__item"><span class="home-slider__text">Award winning, London-based independent immigration solicitors</span><a href="#" class="home-slider__button">FIND OUT MORE</a></li>
-            </ul>
-            <ul class="home-slider__list">
-              <li class="home-slider__item"><span class="home-slider__text">Award winning, London-based independent immigration solicitors</span><a href="#" class="home-slider__button">FIND OUT MORE</a></li>
-            </ul>
-            <ul class="home-slider__list">
-              <li class="home-slider__item"><span class="home-slider__text">Award winning, London-based independent immigration solicitors</span><a href="#" class="home-slider__button">FIND OUT MORE</a></li>
-            </ul>
-            <ul class="home-slider__list">
-              <li class="home-slider__item"><span class="home-slider__text">Award winning, London-based independent immigration solicitors</span><a href="#" class="home-slider__button">FIND OUT MORE</a></li>
+          <div class="home__socials home-socials">
+            <ul class="home-socials__list">
+              <li class="home-socials__item"><a href="#" class="home-socials__link" tabindex="1"></a></li>
+              <li class="home-socials__item"><a href="#" class="home-socials__link" tabindex="1"></a></li>
+              <li class="home-socials__item"><a href="#" class="home-socials__link" tabindex="1"></a></li>
             </ul>
           </div>
         </div>
-        <div class="home__socials home-socials">
-          <ul class="home-socials__list">
-            <li class="home-socials__item"><a href="#" class="home-socials__link">twitter</a></li>
-            <li class="home-socials__item"><a href="#" class="home-socials__link">facebook</a></li>
-            <li class="home-socials__item"><a href="#" class="home-socials__link">linkedin</a></li>
-          </ul>
+      </section>
+      <section class="about">
+        <div class="container about__container">
+          <div class="vertical__line about__line"></div>
+          <div class="vertical__line about__line"></div>
+          <div class="vertical__line about__line"></div>
+          <div class="vertical__line about__line"></div>
+          <div class="about__background">GHERSON</div>
+          <div class="about__us about-us">
+            <div class="about-us__catchword catchword">WHO WE ARE<br></div>
+            <h2 class="title">UK IMMIGRATION SOLICITORS</h2>
+            <p>
+              Gherson is an award winning independent immigration law firm specialising in inbound UK immigration,
+              representing both private and corporate clients in respect of applications to enter or remain in the UK.
+            </p>
+            <a href="#" class="button">FIND OUT MORE</a>
+          </div>
+          <div class="about__fields about-fields">
+            <div class="about-fields__catchword catchword">OUR FIELDS</div>
+            <ul class="about-fields__list">
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/immigration.png" alt="field" class="field__picture">
+                </div>
+                <h3>Immigration</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/human_rights.png" alt="field" class="field__picture">
+                </div>
+                <h3>Human Rights</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/extraditions.png" alt="field" class="field__picture">
+                </div>
+                <h3>Extraditions</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/nationality.png" alt="field" class="field__picture">
+                </div>
+                <h3>Nationality</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/white_collar.png" alt="field" class="field__picture">
+                </div>
+                <h3>White-Collar Crime</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/eu_law.png" alt="field" class="field__picture"></div>
+                <h3>EU Law</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/litigation.png" alt="field" class="field__picture">
+                </div>
+                <h3>Litigation</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+              <li class="about-fields__item field">
+                <div class="field__image"><img src="./src/images/gherson private.png" alt="field"
+                    class="field__picture">
+                </div>
+                <h3>Gherson Private</h3>
+                <div class="field__delimeter"></div>
+                <p>Gherson is a private law firm founded by Roger Gherson, working alongside top London immigration
+                  solicitors who are committed to the needs of our clients in the UK and internationally.</p>
+                <a href="#" class="field__link"></a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <section class="services">
+        <div class="container services__container">
+          <div class="services__background">
+            <img src="./src/images/services_bg.png" alt="services" class="services__picture">
+          </div>
+          <div class="services__selection selection">
+            <h2 class="selection__title">HOW CAN WE HELP</h2>
+            <div class="selection__contact selection-contact">
+              <ul class="selection-contact__list">
+                <li class="selection-contact__item"><a href="tel://02077244488" class="selection-contact__link"></a></li>
+                <li class="selection-contact__item"><a href="mailto:gherson@gherson.com" class="selection-contact__link"></a></li>
+              </ul>
+            </div>
+            <p class="selection__hint">Get in touch using our contact form by selecting a service from the drop down
+              below</p>
+            <form class="selection__form form" action="#" method="GET">
+              <select name="service" class="select">
+                <option disabled>SELECT SERVICE</option>
+                <option value="1">SERVICE 1</option>
+                <option value="2">SERVICE 2</option>
+                <option value="3">SERVICE 3</option>
+              </select>
+              <button type="submit" class="form__submit button">NEXT STEP <span></span></button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
   </div>
+  <script type="text/javascript" src="./src/slick/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="./src/slick/slick.js"></script>
+  <script type="text/javascript" src="./src/js/main.js"></script>
+  <script>
+  </script>
 </body>
 
 </html>

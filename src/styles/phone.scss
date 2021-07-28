@@ -1,0 +1,6 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
+.home-contacts__phone {
+  @include contacts_phone;
+}

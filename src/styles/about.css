@@ -1,0 +1,28 @@
+@import url(./about_us.css);
+@import url(./fields.css);
+.about__container {
+  position: relative;
+  padding-bottom: 113px;
+}
+.about__us {
+  position: relative;
+  min-height: 450px;
+  z-index: 5;
+}
+.about__fields {
+  position: relative;
+  min-height: 300px;
+}
+.about__background {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 45%;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  z-index: -5;
+  font-family: "CochinRegular";
+  font-size: 285px;
+  color: #fcfcfc;
+}

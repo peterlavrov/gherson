@@ -1,0 +1,29 @@
+.button {
+  display: inline-block;
+  padding: 12px 23px 13px;
+  border: 1px solid #fff;
+  font-family: "RobotoLight";
+  font-size: 16px;
+  color: #fff;
+}
+
+.about .button {
+  color: #3d3d3c;
+  border: 1px solid #3d3d3c;
+}
+
+.form .button {
+  font-family: "RobotoLight";
+  font-size: 16px;
+  color: #3d3d3c;
+  padding: 16px 25px 18px 26px;
+  width: 163px;
+  background-color: #fff;
+  border: 1px solid #3d3d3c;
+  cursor: pointer;
+}
+.form .button span {
+  position: relative;
+  right: -5px;
+  font-family: "FA5PLight";
+}

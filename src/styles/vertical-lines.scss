@@ -1,0 +1,42 @@
+.vertical__line {
+  position: absolute;
+  background-color: #f7f1e2;
+  width: 2px;
+  height: 100%;
+  margin: 0;
+  border: 0;
+  z-index: 2;
+
+  &:nth-child(1) {
+    left: 5.2%;
+  }
+
+  &:nth-child(2) {
+    left: 35%;
+  }
+
+  &:nth-child(3) {
+    right: 35%;
+  }
+
+  &:nth-child(4) {
+    right: 5.2%;
+  }
+}
+
+.home__container .vertical__line {
+  background-color: unset;
+}
+
+.home__container .vertical__line:before {
+  display: block;
+  content: '';
+  position: absolute;
+  background-color: white;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+  opacity: .2;
+}

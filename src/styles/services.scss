@@ -1,0 +1,58 @@
+@import "../assets/master";
+@import "../assets/mixins";
+@import url(./form.css);
+
+.services {
+  &__container {
+    position: relative;
+  }
+
+  &__background {
+    width: 100%;
+    height: auto;
+  }
+
+  &__picture {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__selection {
+    position: absolute;
+    bottom: 0;
+    right: 10.5%;
+    padding: 85px 91px 88px;
+    width: 37%;
+    background-color: $selection_bgcolor;
+  }
+}
+
+.selection {
+  &__title {
+    @include selection_title;
+    margin-bottom: 44px
+  }
+  
+  &__hint {
+    @include selection_hint;
+    margin-bottom: 47px;
+  }
+  
+  &-contact {
+    &__list {
+      display: flex;
+      margin-bottom: 38px;
+    }
+
+    &__item {
+      margin-right: 30px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    &__link {
+      @include selection_contact;
+    }
+  }
+}

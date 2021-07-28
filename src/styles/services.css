@@ -1,0 +1,53 @@
+@import url(./form.css);
+.services__container {
+  position: relative;
+}
+.services__background {
+  width: 100%;
+  height: auto;
+}
+.services__picture {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.services__selection {
+  position: absolute;
+  bottom: 0;
+  right: 10.5%;
+  padding: 85px 91px 88px;
+  width: 37%;
+  background-color: #f6f6f6;
+}
+
+.selection__title {
+  font-family: "RobotoLight";
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: #3d3d3c;
+  margin-bottom: 44px;
+}
+.selection__hint {
+  font-family: "DidactGothic";
+  font-size: 20px;
+  color: #3d3d3c;
+  margin-bottom: 47px;
+}
+.selection-contact__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 38px;
+}
+.selection-contact__item {
+  margin-right: 30px;
+}
+.selection-contact__item:last-child {
+  margin-right: 0;
+}
+.selection-contact__link {
+  font-family: "FA5PLight";
+  font-size: 30px;
+  color: #3d3d3c;
+}

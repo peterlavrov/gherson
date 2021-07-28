@@ -1,0 +1,32 @@
+@import "../assets/master";
+
+.button {
+    display: inline-block;
+    padding: 12px 23px 13px;
+    border: 1px solid $home_link_color;
+    font-family: 'RobotoLight';
+    font-size: 16px;
+    color: $home_link_color;
+}
+
+.about .button {
+    color: $title_color;
+    border: 1px solid $title_color;
+}
+
+.form .button {
+    font-family: 'RobotoLight';
+    font-size: 16px;
+    color: $title_color;
+    padding: 16px 25px 18px 26px;
+    width: 163px;
+    background-color: $home_link_color;
+    border: 1px solid $title_color;
+    cursor: pointer;
+
+    & span {
+        position: relative;
+        right: -5px;
+        font-family: 'FA5PLight';
+    }
+}

@@ -1,0 +1,87 @@
+@import "./master";
+
+@mixin about_paragraph {
+  font-family: "DidactGothic";
+  font-size: 22px;
+  color: $text_color;
+}
+
+@mixin fields_paragraph {
+  font-family: "DidactGothic";
+  font-size: 18px;
+  color: $text_color;
+}
+
+@mixin title {
+  font-family: "RobotoLight";
+  font-size: 40px;
+  color: $title_color;
+}
+
+@mixin fields_title {
+  font-family: "RobotoLight";
+  font-size: 24px;
+  color: $title_color;
+}
+
+@mixin news_title {
+  font-family: "RobotoLight";
+  font-size: 28px;
+  color: $title_color;
+}
+
+@mixin catchword {
+  font-family: "CochinRegular";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: $title_color;
+}
+
+@mixin gherson_bg {
+  font-family: "CochinRegular";
+  font-size: 285px;
+  color: $gherson_bgcolor;
+}
+
+@mixin arrow_link {
+  font-family: "FA5PLight";
+  color: $title_color;
+  font-size: 18px;
+}
+
+@mixin contacts_phone {
+  font-family: "RobotoLight";
+  font-size: 18px;
+  color: $home_link_color;
+  font-style: normal;
+}
+
+@mixin selection_title {
+  font-family: "RobotoLight";
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: $title_color;
+}
+
+@mixin selection_contact {
+  font-family: "FA5PLight";
+  font-size: 30px;
+  color: $title_color;
+}
+
+@mixin selection_hint {
+  font-family: "DidactGothic";
+  font-size: 20px;
+  color: $title_color;
+}
+
+@mixin form_select {
+  font-family: 'RobotoLight';
+  font-size: 16px;
+}
+
+@mixin form_arrow {
+  font-family: 'FA5PLight';
+  font-size: 16px;
+}
