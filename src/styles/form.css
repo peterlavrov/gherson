@@ -24,6 +24,9 @@
           user-select: none;
   background: #fff;
 }
+.new-select:hover {
+  color: #8a8a8a;
+}
 
 .new-select__list {
   position: absolute;

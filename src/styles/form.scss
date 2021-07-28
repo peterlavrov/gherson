@@ -21,6 +21,9 @@
   cursor: pointer;
   user-select: none;
   background: $home_link_color;
+  &:hover {
+    color: $text_color;
+  }
 }
 
 .new-select__list {

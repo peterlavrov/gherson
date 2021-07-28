@@ -23,6 +23,15 @@
     display: inline-block;
     width: 30px;
     @include arrow_link;
+    color: $title_color;
+
+    &:hover {
+      color: $text_color;
+    }
+
+    &:active {
+      color: $text_color;
+    }
   }
 
   &__delimeter {

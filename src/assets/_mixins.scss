@@ -46,7 +46,6 @@
 
 @mixin arrow_link {
   font-family: "FA5PLight";
-  color: $title_color;
   font-size: 18px;
 }
 
@@ -67,7 +66,6 @@
 @mixin selection_contact {
   font-family: "FA5PLight";
   font-size: 30px;
-  color: $title_color;
 }
 
 @mixin selection_hint {

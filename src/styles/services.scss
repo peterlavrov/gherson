@@ -53,6 +53,14 @@
     }
     &__link {
       @include selection_contact;
+      color: $title_color;
+      &:hover {
+        color: $text_color;
+      }
+
+      &:active {
+        color: $text_color;
+      }
     }
   }
 }
