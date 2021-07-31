@@ -3,42 +3,59 @@
 @import url(./form.css);
 
 .services {
+ 
   &__container {
     position: relative;
   }
 
   &__background {
     width: 100%;
-    height: auto;
-  }
-
-  &__picture {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: 530px;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   &__selection {
     position: absolute;
-    bottom: 0;
+    bottom: 5px;
     right: 10.5%;
     padding: 85px 91px 88px;
     width: 37%;
     background-color: $selection_bgcolor;
+  }
+
+  &__second {
+    &-contact {
+      &__item {
+        & a {
+          &:active {
+            color: $text_color;
+          }
+        }
+      }
+    }
+  }
+
+  &__second .selection {
+      right: unset;
+      left: 10.5%;
   }
 }
 
 .selection {
   &__title {
     @include selection_title;
-    margin-bottom: 44px
+    margin-bottom: 44px;
   }
-  
+
   &__hint {
     @include selection_hint;
     margin-bottom: 47px;
   }
-  
+
   &-contact {
     &__list {
       display: flex;
@@ -50,16 +67,17 @@
       &:last-child {
         margin-right: 0;
       }
-    }
-    &__link {
-      @include selection_contact;
-      color: $title_color;
-      &:hover {
-        color: $text_color;
-      }
 
-      &:active {
-        color: $text_color;
+      & a {
+        @include selection_contact;
+        color: $title_color;
+        &:hover {
+          color: $text_color;
+        }
+
+        &:active {
+          color: $text_color;
+        }
       }
     }
   }

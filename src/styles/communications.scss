@@ -1,0 +1,28 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
+.home-contacts a {
+  @include contacts_phone;
+  color: $home_link_color;
+  &:hover {
+    color: $delimeter_color;
+  }
+
+  &:active {
+    color: $delimeter_color;
+  }
+}
+
+.communications a {
+  align-self: flex-start;
+  @include footer_communications;
+  line-height: 1.4;
+  color: $footer_communications_color;
+  &:hover {
+    color: $blog_topic_color;
+  }
+  
+  &:active {
+    color: $blog_topic_color;
+  }
+}

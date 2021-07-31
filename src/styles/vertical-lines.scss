@@ -1,6 +1,9 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
 .vertical__line {
   position: absolute;
-  background-color: #f7f1e2;
+  background-color: $vertical_line_color;
   width: 2px;
   height: 100%;
   margin: 0;
@@ -32,11 +35,15 @@
   display: block;
   content: '';
   position: absolute;
-  background-color: white;
+  background-color: $home_link_color;
   top: 0;
   right: 0;
   left: 0;
   bottom: 0;
   z-index: 2;
   opacity: .2;
+}
+
+.blogs__container .vertical__line:nth-child(2), .blogs__container .vertical__line:nth-child(3) {
+  display: none;
 }

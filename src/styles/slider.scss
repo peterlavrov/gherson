@@ -23,7 +23,6 @@
   }
 }
 
-
 .slides-slide {
   display: inline-block;
   position: relative;
@@ -50,6 +49,14 @@
     width: 55%;
     margin-left: 200px;
     z-index: 5;
+
+    & p {
+    font-family: 'RobotoLight';
+    font-size: 60px;
+    color: $home_link_color;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    }
   }
 
   &__background {
@@ -58,13 +65,5 @@
     height: 100%;
     object-fit: cover;
     z-index: -5;
-  }
-
-  &__text {
-    font-family: 'RobotoLight';
-    font-size: 60px;
-    color: $home_link_color;
-    text-transform: uppercase;
-    margin-bottom: 50px;
   }
 }

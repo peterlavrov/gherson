@@ -13,13 +13,13 @@
     max-height: 56px;
     max-width: 56px;
     margin-bottom: 29px;
-  }
-  &__picture {
-    height: 100%;
-    width: auto
+    & img {
+      height: 100%;
+      width: auto
+    }
   }
 
-  &__link {
+  & a {
     display: inline-block;
     width: 30px;
     @include arrow_link;

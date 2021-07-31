@@ -10,6 +10,7 @@ $(
       slidesToScroll: 1
     })
   }
+
 )
 
 // работа с селектом
@@ -68,3 +69,27 @@ $('.select').each(function() {
       }
   });
 });
+
+// работа со слайдером в секции team 
+
+
+const teamSlides = $('.team-member');
+const teamControls = $('.team-control');
+let currentSlide = -1;
+
+teamControls.on('click', e => {
+  e.preventDefault();
+  currentSlide = $(e.currentTarget).index();
+  teamControls.removeClass('team-control--active');
+  $(e.currentTarget).addClass('team-control--active');
+  teamSlides.removeClass('team-member--active');
+  teamSlides.eq(currentSlide).addClass('team-member--active');
+});
+
+teamSlides.on('mouseenter', e => {
+    currentSlide = $(e.currentTarget).index();
+    teamSlides.removeClass('team-member--active');
+    $(e.currentTarget).addClass('team-member--active');
+    teamControls.removeClass('team-control--active');
+    teamControls.eq(currentSlide).addClass('team-control--active');
+  });

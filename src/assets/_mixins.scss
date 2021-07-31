@@ -52,8 +52,20 @@
 @mixin contacts_phone {
   font-family: "RobotoLight";
   font-size: 18px;
-  color: $home_link_color;
   font-style: normal;
+}
+
+@mixin footer_communications {
+  font-family: "DidactGothic";
+  font-size: 16px;
+  font-style: normal;
+}
+
+@mixin team_all_link {
+  font-family: "RobotoLight";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: bolder;
 }
 
 @mixin selection_title {
@@ -82,4 +94,27 @@
 @mixin form_arrow {
   font-family: 'FA5PLight';
   font-size: 16px;
+}
+
+@mixin news_numeration {
+  font-family: "CochinRegular";
+  font-size: 140px;
+}
+
+@mixin blog_pubinfo {
+  font-family: 'DidactGothic';
+  font-size: 14px;
+}
+
+@mixin blog_topic {
+  font-family: 'RobotoLight';
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@mixin blog_text {
+  font-family: 'DidactGothic';
+  font-size: 17px;
+  line-height: 29px;
 }

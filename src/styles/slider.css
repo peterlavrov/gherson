@@ -60,6 +60,13 @@
   margin-left: 200px;
   z-index: 5;
 }
+.slides-slide__content p {
+  font-family: "RobotoLight";
+  font-size: 60px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
 .slides-slide__background {
   display: block;
   width: 100%;
@@ -67,11 +74,4 @@
   -o-object-fit: cover;
      object-fit: cover;
   z-index: -5;
-}
-.slides-slide__text {
-  font-family: "RobotoLight";
-  font-size: 60px;
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 50px;
 }
