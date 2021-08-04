@@ -1,3 +1,5 @@
+@import "../assets/mixins";
+
 * {
   box-sizing: border-box;
 }
@@ -9,6 +11,7 @@ body {
 .container {
   margin: 0 auto;
   max-width: 1920px;
+  overflow: hidden;
 }
 
 ul {
