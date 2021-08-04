@@ -1,3 +1,8 @@
+// тестовый алерт
+
+alert(window.innerWidth);
+alert(document.documentElement.clientWidth);
+
 // инициализация слайдера
 
 $(
