@@ -6,6 +6,10 @@
   &__container {
     position: relative;
     padding-bottom: 113px;
+
+    @include desktop_hd {
+      padding-bottom: 30px;
+    }
   }
 
   &__us {

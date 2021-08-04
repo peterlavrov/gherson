@@ -4,6 +4,7 @@
 .blogs {
   &__container {
     display: flex;
+    position: relative;
     flex-direction: column;
     align-items: center;
     background-color: $home_link_color;
@@ -21,7 +22,7 @@
     z-index: 5;
     margin-bottom: 100px;
 
-    & span {
+    span {
       position: absolute;
       right: 0;
       font-family: "FA5PLight";
@@ -31,13 +32,13 @@
 
     &:hover {
       color: $text_color;
-      & span {
+      span {
         color: $delimeter_color;
       }
     }
     &:active {
       color: $text_color;
-      & span {
+      span {
         color: $delimeter_color;
       }
     }
@@ -49,6 +50,7 @@
     display: flex;
     position: relative;
     width: 79%;
+    flex-wrap: wrap;
   }
 }
 
@@ -56,7 +58,7 @@
   display: flex;
   flex-direction: column;
   padding: 0 calc(5%/3);
-  flex-basis: calc(100%/3);
+  flex-basis: calc(96%/3);
   border: 1px solid $selection_bgcolor;
   margin-right: 2%;
   padding-bottom: 30px;
@@ -65,7 +67,7 @@
     background-color: $selection_bgcolor;
     cursor: default;
 
-    & .blog__delimeter {
+    .blog__delimeter {
       background-color: $home_link_color;
     }
   }
@@ -75,14 +77,14 @@
     max-height: 220px;
     margin-bottom: 20px;
 
-    & img {
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
   }
 
-  &:last-child {
+  &:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -110,19 +112,19 @@
     margin-bottom: 30px;
   }
 
-  & h3 {
+  h3 {
     @include blog_topic;
     color: $blog_topic_color;
     margin-bottom: 30px;
   }
 
-  & p {
+  p {
     @include blog_text;
     color: $blog_text_color;
     margin-bottom: 30px;
   }
 
-  & a {
+  a {
     font-family: 'FA5PLight';
     font-size: 16px;
     color: $blog_text_color;

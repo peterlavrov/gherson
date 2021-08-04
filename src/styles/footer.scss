@@ -63,7 +63,7 @@
     color: $footer_communications_color;
     margin-right: 25px;
     align-items: flex-end;
-    & span {
+    span {
       text-align: right;
       &:first-child {
         width: 60%;
@@ -85,7 +85,7 @@
     @include footer_communications;
     margin-right: 25px;
     
-    & a {
+    a {
       color: $footer_communications_color;
       &:hover {
         color: $blog_topic_color;

@@ -1,8 +1,13 @@
 .home-contacts a {
   font-family: "RobotoLight";
-  font-size: 18px;
   font-style: normal;
+  font-size: 18px;
   color: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .home-contacts a {
+    font-size: 14px;
+  }
 }
 .home-contacts a:hover {
   color: #e9e9e9;

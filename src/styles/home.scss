@@ -1,3 +1,6 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
 @import url(./header.css);
 @import url(./logo.css);
 @import url(./communications.css);
@@ -10,7 +13,7 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    height: 1090px;
+    height: calc(100vw * (1090/1920));
   }
 
   &__header {
@@ -19,10 +22,14 @@
     top: 48px;
     left: 0;
     width: 100%;
-    padding-left: 200px;
-    padding-right: 185px;
+    padding-left: 10.4%;
+    padding-right: 9.6%;
     justify-content: space-between;
     z-index: 5;
+    @include desktop_hd {
+      padding-left: 8.2%;
+      padding-right: 7.9%;
+    }
   }
 
   &__slider {

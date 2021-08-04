@@ -31,7 +31,8 @@ $('.select').each(function() {
 
   const selectHead = _this.next('.new-select');
   $('<div>', {
-      class: 'new-select__list'
+      class: 'new-select__list',
+      style: 'z-index: 10'
   }).insertAfter(selectHead);
 
   const selectList = selectHead.next('.new-select__list');
@@ -93,3 +94,14 @@ teamSlides.on('mouseenter', e => {
     teamControls.removeClass('team-control--active');
     teamControls.eq(currentSlide).addClass('team-control--active');
   });
+
+  // анимация перехода из меню по якорям
+
+  $(document).ready(function(){
+    $("#menu").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+            top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 500);
+    });
+});

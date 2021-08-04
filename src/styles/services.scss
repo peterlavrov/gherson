@@ -11,7 +11,7 @@
   &__background {
     width: 100%;
     height: 530px;
-    & img {
+    img {
       width: 100%;
       height: 100%;
       object-fit: cover;
@@ -22,15 +22,20 @@
     position: absolute;
     bottom: 5px;
     right: 10.5%;
-    padding: 85px 91px 88px;
+    padding: 4.55% 4.7% 4.6%;
     width: 37%;
+    max-height: 100%;
     background-color: $selection_bgcolor;
+
+    @include desktop_hd {
+
+    }
   }
 
   &__second {
     &-contact {
       &__item {
-        & a {
+        a {
           &:active {
             color: $text_color;
           }
@@ -49,17 +54,29 @@
   &__title {
     @include selection_title;
     margin-bottom: 44px;
+    @include desktop_hd {
+      font-size: 37px;
+      margin-bottom: 30px;
+    }
   }
 
   &__hint {
     @include selection_hint;
     margin-bottom: 47px;
+    @include desktop_hd {
+      font-size: 15px;
+      margin-bottom: 30px;
+    }
   }
 
   &-contact {
     &__list {
       display: flex;
       margin-bottom: 38px;
+
+      @include desktop_hd {
+        margin-bottom: 28px;
+      }
     }
 
     &__item {
@@ -68,8 +85,12 @@
         margin-right: 0;
       }
 
-      & a {
+      a {
         @include selection_contact;
+
+        @include desktop_hd {
+          font-size: 22px;
+        }
         color: $title_color;
         &:hover {
           color: $text_color;

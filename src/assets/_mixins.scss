@@ -1,27 +1,57 @@
 @import "./master";
 
-@mixin about_paragraph {
-  font-family: "DidactGothic";
-  font-size: 22px;
-  color: $text_color;
-}
-
-@mixin fields_paragraph {
-  font-family: "DidactGothic";
-  font-size: 18px;
-  color: $text_color;
+@mixin desktop_hd {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
 }
 
 @mixin title {
   font-family: "RobotoLight";
   font-size: 40px;
   color: $title_color;
+
+  @include desktop_hd {
+    font-size: 30px;
+  }
+}
+
+@mixin about_paragraph {
+  font-family: "DidactGothic";
+  font-size: 22px;
+  color: $text_color;
+  
+  @include desktop_hd {
+    font-size: 17px;
+  }
+}
+
+@mixin fields_paragraph {
+  font-family: "DidactGothic";
+  font-size: 18px;
+  color: $text_color;
+
+  @include desktop_hd {
+    font-size: 14px;
+  }
 }
 
 @mixin fields_title {
   font-family: "RobotoLight";
   font-size: 24px;
   color: $title_color;
+  @include desktop_hd {
+    font-size: 19px;
+  }
+}
+
+@mixin arrow_link {
+  font-family: "FA5PLight";
+  font-size: 18px;
+
+  @include desktop_hd {
+    font-size: 14px;
+  }
 }
 
 @mixin news_title {
@@ -44,14 +74,8 @@
   color: $gherson_bgcolor;
 }
 
-@mixin arrow_link {
-  font-family: "FA5PLight";
-  font-size: 18px;
-}
-
 @mixin contacts_phone {
   font-family: "RobotoLight";
-  font-size: 18px;
   font-style: normal;
 }
 
@@ -89,11 +113,18 @@
 @mixin form_select {
   font-family: 'RobotoLight';
   font-size: 16px;
+
+  @include desktop_hd {
+    font-size: 12px;
+  }
 }
 
 @mixin form_arrow {
   font-family: 'FA5PLight';
   font-size: 16px;
+  @include desktop_hd {
+    font-size: 12px;
+  }
 }
 
 @mixin news_numeration {

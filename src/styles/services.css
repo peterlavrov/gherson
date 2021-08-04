@@ -16,8 +16,9 @@
   position: absolute;
   bottom: 5px;
   right: 10.5%;
-  padding: 85px 91px 88px;
+  padding: 4.55% 4.7% 4.6%;
   width: 37%;
+  max-height: 100%;
   background-color: #f6f6f6;
 }
 .services__second-contact__item a:active {
@@ -35,17 +36,34 @@
   color: #3d3d3c;
   margin-bottom: 44px;
 }
+@media screen and (max-width: 1200px) {
+  .selection__title {
+    font-size: 37px;
+    margin-bottom: 30px;
+  }
+}
 .selection__hint {
   font-family: "DidactGothic";
   font-size: 20px;
   color: #3d3d3c;
   margin-bottom: 47px;
 }
+@media screen and (max-width: 1200px) {
+  .selection__hint {
+    font-size: 15px;
+    margin-bottom: 30px;
+  }
+}
 .selection-contact__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 38px;
+}
+@media screen and (max-width: 1200px) {
+  .selection-contact__list {
+    margin-bottom: 28px;
+  }
 }
 .selection-contact__item {
   margin-right: 30px;
@@ -57,6 +75,11 @@
   font-family: "FA5PLight";
   font-size: 30px;
   color: #3d3d3c;
+}
+@media screen and (max-width: 1200px) {
+  .selection-contact__item a {
+    font-size: 22px;
+  }
 }
 .selection-contact__item a:hover {
   color: #8a8a8a;

@@ -2,6 +2,10 @@
 @import "../assets/master";
 
 .news {
+    &__container {
+        position: relative;
+    }
+
     &-item {
         position: relative;
         flex-basis: calc(100% / 3);
@@ -9,6 +13,11 @@
         padding-top: 40px;
         padding-bottom: 130px;
         z-index: 5;
+
+        @include desktop_hd {
+            padding-top: 30px;
+            padding-bottom: 50px;
+        }
 
         &__numeration {
             position: absolute;
@@ -19,9 +28,13 @@
             text-shadow: 0px 0px 3px $title_color;
             opacity: .4;
             z-index: -5;
+
+            @include desktop_hd {
+                font-size: 100px;
+            }
         }
 
-        & a {
+        a {
             display: flex;
             width: 30px;
             @include arrow_link;
@@ -29,38 +42,42 @@
             white-space: nowrap;
             min-width: 30%;
 
-            & span {
+            span {
                 position: relative;
                 color: $title_color;
                 right: -20px;
             }
             &:hover {
                 color: $text_color;
-                & span {
+                span {
                     color: $delimeter_color;
                 }
             }
 
             &:active {
                 color: $text_color;
-                & span {
+                span {
                     color: $delimeter_color;
                 }
             }
         }
 
-        & p {
+        p {
             @include fields_paragraph;
             width: 83%;
             margin-bottom: 30px;
             line-height: 29px;
         }
 
-        & h3 {
+        h3 {
             @include news_title;
             width: 83%;
             margin-bottom: 25px;
             line-height: 1.2;
+
+            @include desktop_hd {
+                font-size: 23px;
+            }
         }
     }
     &-block {

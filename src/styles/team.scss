@@ -19,6 +19,10 @@
     color: $home_link_color;
     text-align: center;
     font-size: 180px;
+
+    @include desktop_hd {
+      font-size: 140px;
+    }
   }
 
   &__link {
@@ -31,7 +35,11 @@
     align-self: flex-end;
     z-index: 5;
 
-    & span {
+    @include desktop_hd {
+      font-size: 14px;
+    }
+
+    span {
       position: absolute;
       right: 0;
       font-family: "FA5PLight";
@@ -41,13 +49,13 @@
 
     &:hover {
       color: $text_color;
-      & span {
+      span {
         color: $delimeter_color;
       }
     }
     &:active {
       color: $text_color;
-      & span {
+      span {
         color: $delimeter_color;
       }
     }
@@ -65,6 +73,9 @@
     justify-content: flex-end;
     align-items: center;
     padding: 100px 0;
+
+    @include desktop_hd {
+    }
   }
 
   &__member {
@@ -73,17 +84,26 @@
     width: 287px;
     height: 380px;
     transition: all 0.2s ease;
+    
+    @include desktop_hd {
+      height: 285px;
+      width: 215px; 
+      max-width: calc((100% / 6) - 2%);
+    }
 
     &:hover {
-      height: 380px;
       padding: 0;
       transition: all 0.2s ease;
+
+      @include desktop_hd {
+        height: 285px;
+      }
 
       .team-member__avatar {
         box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
       }
 
-      & .member-info {
+      .member-info {
         border: none;
         .member-info {
           &__gherson {
@@ -115,6 +135,10 @@
       height: 380px;
       padding: 0;
       transition: all 0.2s ease;
+      
+      @include desktop_hd {
+        height: 285px;
+      }
 
       .team-member__avatar {
         box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
@@ -177,7 +201,7 @@
     height: 24px;
     margin-right: 37px;
     
-    & a {
+    a {
       display: flex;
       width: 16px;
       height: 16px;
@@ -204,7 +228,7 @@
   }
   
   &-control--active {
-    & a {
+    a {
       position: relative;
       width: 24px;
       height: 24px;

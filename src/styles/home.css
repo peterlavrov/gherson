@@ -14,7 +14,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: 1090px;
+  height: calc(100vw * (1090/1920));
 }
 .home__header {
   display: -webkit-box;
@@ -24,12 +24,18 @@
   top: 48px;
   left: 0;
   width: 100%;
-  padding-left: 200px;
-  padding-right: 185px;
+  padding-left: 10.4%;
+  padding-right: 9.6%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   z-index: 5;
+}
+@media screen and (max-width: 1200px) {
+  .home__header {
+    padding-left: 8.2%;
+    padding-right: 7.9%;
+  }
 }
 .home__slider {
   display: -webkit-box;

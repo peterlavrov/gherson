@@ -4,6 +4,11 @@
   position: relative;
   padding-bottom: 113px;
 }
+@media screen and (max-width: 1200px) {
+  .about__container {
+    padding-bottom: 30px;
+  }
+}
 .about__us {
   position: relative;
   min-height: 450px;

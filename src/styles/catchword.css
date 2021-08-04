@@ -18,3 +18,8 @@
   z-index: 5;
   white-space: nowrap;
 }
+@media screen and (max-width: 1200px) {
+  .catchword {
+    font-size: 10px;
+  }
+}

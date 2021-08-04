@@ -67,6 +67,11 @@
   text-transform: uppercase;
   margin-bottom: 50px;
 }
+@media screen and (max-width: 1200px) {
+  .slides-slide__content p {
+    font-size: 40px;
+  }
+}
 .slides-slide__background {
   display: block;
   width: 100%;

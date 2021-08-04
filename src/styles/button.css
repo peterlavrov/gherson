@@ -4,6 +4,17 @@
   font-family: "RobotoLight";
   font-size: 16px;
 }
+@media screen and (max-width: 1200px) {
+  .button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .button {
+    padding: 8px 16px 8.5px;
+    font-size: 12px;
+  }
+}
 
 .home-slider .button {
   border: 1px solid #fff;
@@ -53,6 +64,17 @@
   border: 1px solid #3d3d3c;
   color: #3d3d3c;
   cursor: pointer;
+}
+@media screen and (max-width: 1200px) {
+  .form .button {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .form .button {
+    padding: 11px 19px 12px 20px;
+    width: 130px;
+  }
 }
 .form .button span {
   position: relative;

@@ -1,3 +1,6 @@
+@import "../assets/master";
+@import "../assets/mixins";
+
 @import url(./logo.css);
 @import url(./menu.css);
 
@@ -9,6 +12,18 @@
 
   &__logo {
     padding-right: 152px;
+    @include desktop_hd {
+      width: 180px;
+      padding-right: 40px;
+    }
+
+    img {
+      @include desktop_hd {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
   }
 
   &__contacts {

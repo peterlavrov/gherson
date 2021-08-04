@@ -5,15 +5,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  & p {
+  
+  h2 {
+    margin-bottom: 54px;
+    letter-spacing: 4px;  
+    @include desktop_hd {
+      margin-bottom: 40px;
+      font-size: 30px;
+    }
+  }
+
+  p {
     @include about_paragraph;
     width: 54%;
     text-align: center;
     line-height: 1.64;
     margin-bottom: 70px;
-  }
-  & h2 {
-    margin-bottom: 54px;
-    letter-spacing: 4px;  
+    @include desktop_hd {
+      margin-bottom: 50px;
+    }
   }
 }

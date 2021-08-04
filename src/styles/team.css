@@ -24,6 +24,11 @@
   text-align: center;
   font-size: 180px;
 }
+@media screen and (max-width: 1200px) {
+  .team__background {
+    font-size: 140px;
+  }
+}
 .team__link {
   font-family: "RobotoLight";
   font-size: 18px;
@@ -37,6 +42,11 @@
   -ms-flex-item-align: end;
       align-self: flex-end;
   z-index: 5;
+}
+@media screen and (max-width: 1200px) {
+  .team__link {
+    font-size: 14px;
+  }
 }
 .team__link span {
   position: absolute;
@@ -83,12 +93,23 @@
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
+@media screen and (max-width: 1200px) {
+  .team__member {
+    height: 285px;
+    width: 215px;
+    max-width: calc((100% / 6) - 2%);
+  }
+}
 .team__member:hover {
-  height: 380px;
   padding: 0;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+@media screen and (max-width: 1200px) {
+  .team__member:hover {
+    height: 285px;
+  }
 }
 .team__member:hover .team-member__avatar {
   -webkit-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);
@@ -122,6 +143,11 @@
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
+}
+@media screen and (max-width: 1200px) {
+  .team-member--active {
+    height: 285px;
+  }
 }
 .team-member--active .team-member__avatar {
   -webkit-box-shadow: 0px 16px 16px 0px rgba(0, 0, 0, 0.15);

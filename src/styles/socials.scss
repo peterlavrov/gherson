@@ -1,4 +1,5 @@
 @import "../assets/master";
+@import "../assets/mixins";
 
 .home-socials {
   position: absolute;
@@ -7,21 +8,35 @@
   width: 100px;
   z-index: 10;
 
+  @include desktop_hd {
+    width: 65px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 39px;
+    @include desktop_hd {
+      padding-bottom: 29px;
+    }
   }
 
   &__item {
     margin-bottom: 24px;
+    @include desktop_hd {
+      margin-bottom: 18px;
+    }
     &:last-child {
       margin-bottom: 0;
     }
-    & a {
+    a {
       font-family: "FA5BRegular";
       font-size: 18px;
+
+      @include desktop_hd {
+        font-size: 14px;
+      }
       color: $home_socials_color;
       &:hover {
         color: $delimeter_color;
@@ -42,7 +57,7 @@
     &:last-child {
       margin-right: 0;
     }
-    & a {
+    a {
       font-family: "FA5BRegular";
       font-size: 18px;
       color: $footer_communications_color;
@@ -52,4 +67,3 @@
     }
   }
 }
-

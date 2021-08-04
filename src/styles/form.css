@@ -11,6 +11,11 @@
   position: relative;
   margin-right: 20px;
 }
+@media screen and (max-width: 1200px) {
+  .select {
+    max-width: 150px;
+  }
+}
 
 .new-select {
   position: relative;
@@ -23,6 +28,16 @@
       -ms-user-select: none;
           user-select: none;
   background: #fff;
+}
+@media screen and (max-width: 1200px) {
+  .new-select {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .new-select {
+    padding: 12px 19px 13px 20px;
+  }
 }
 .new-select:hover {
   color: #8a8a8a;
@@ -42,6 +57,11 @@
       -ms-user-select: none;
           user-select: none;
 }
+@media screen and (max-width: 1200px) {
+  .new-select__list {
+    top: 39px;
+  }
+}
 
 .new-select__list.on {
   display: block;
@@ -52,6 +72,16 @@
   padding: 10px 25px 11px 26px;
   font-family: "RobotoLight";
   font-size: 16px;
+}
+@media screen and (max-width: 1200px) {
+  .new-select__item span {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .new-select__item span {
+    padding: 7.5px 19px 8px 20px;
+  }
 }
 
 .new-select__item span:hover {
@@ -74,6 +104,17 @@
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
+}
+@media screen and (max-width: 1200px) {
+  .new-select:after {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .new-select:after {
+    right: 12px;
+    top: 12px;
+  }
 }
 
 .new-select.on:after {
