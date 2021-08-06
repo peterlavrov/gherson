@@ -1,13 +1,14 @@
 .home-socials {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 39px;
   width: 100px;
   z-index: 10;
 }
 @media screen and (max-width: 1200px) {
   .home-socials {
     width: 65px;
+    bottom: 30px;
   }
 }
 .home-socials__list {
@@ -21,12 +22,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 39px;
-}
-@media screen and (max-width: 1200px) {
-  .home-socials__list {
-    padding-bottom: 29px;
-  }
 }
 .home-socials__item {
   margin-bottom: 24px;

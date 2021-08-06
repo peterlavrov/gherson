@@ -5,13 +5,13 @@
 
 body {
   margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1920px;
-  max-width: 100%;
-  overflow: hidden;
 }
 
 ul {

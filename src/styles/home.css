@@ -14,7 +14,7 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  height: calc(100vw * (1090/1920));
+  max-height: calc(100vw * (1090/1920));
 }
 .home__header {
   display: -webkit-box;

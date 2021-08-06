@@ -81,7 +81,6 @@
 
 @mixin footer_communications {
   font-family: "DidactGothic";
-  font-size: 16px;
   font-style: normal;
 }
 
@@ -133,18 +132,13 @@
 
 @mixin blog_pubinfo {
   font-family: 'DidactGothic';
-  font-size: 14px;
 }
 
 @mixin blog_topic {
   font-family: 'RobotoLight';
-  font-size: 22px;
-  line-height: 32px;
   font-weight: 600;
 }
 
 @mixin blog_text {
   font-family: 'DidactGothic';
-  font-size: 17px;
-  line-height: 29px;
 }
