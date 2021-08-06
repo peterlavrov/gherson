@@ -33,7 +33,6 @@
 }
 .footer__copyright {
   font-family: "DidactGothic";
-  font-size: 16px;
   font-style: normal;
   font-size: 15px;
   color: #979797;
@@ -111,7 +110,6 @@
       -ms-flex-direction: column;
           flex-direction: column;
   font-family: "DidactGothic";
-  font-size: 16px;
   font-style: normal;
   color: #979797;
   font-size: 16px;
@@ -153,7 +151,6 @@
 }
 .policies__link {
   font-family: "DidactGothic";
-  font-size: 16px;
   font-style: normal;
   font-size: 16px;
   margin-right: 25px;

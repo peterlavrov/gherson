@@ -120,7 +120,6 @@
 .blog-pubinfo__date {
   font-family: "DidactGothic";
   font-size: 14px;
-  font-size: 14px;
   color: #666666;
 }
 @media screen and (max-width: 1200px) {
@@ -130,7 +129,6 @@
 }
 .blog-pubinfo__author {
   font-family: "DidactGothic";
-  font-size: 14px;
   font-size: 14px;
   color: #666666;
 }
@@ -153,8 +151,6 @@
 }
 .blog h3 {
   font-family: "RobotoLight";
-  font-size: 22px;
-  line-height: 32px;
   font-weight: 600;
   color: #3e3e3d;
   margin-bottom: 30px;
@@ -170,8 +166,6 @@
 }
 .blog p {
   font-family: "DidactGothic";
-  font-size: 17px;
-  line-height: 29px;
   font-size: 17px;
   line-height: 29px;
   color: #6d6d6d;

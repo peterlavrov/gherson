@@ -6,6 +6,12 @@
   }
 }
 
+@mixin desktop_uhd {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
 @mixin title {
   font-family: "RobotoLight";
   font-size: 40px;

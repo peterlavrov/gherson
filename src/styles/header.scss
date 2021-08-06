@@ -12,12 +12,24 @@
 
   &__logo {
     padding-right: 152px;
+
+    @include desktop_uhd {
+      width: 220px;
+      padding-right: 60px;
+    }
+
     @include desktop_hd {
       width: 180px;
       padding-right: 40px;
     }
 
     img {
+
+      @include desktop_uhd {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
       @include desktop_hd {
         width: 100%;
         height: 100%;

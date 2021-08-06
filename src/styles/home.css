@@ -14,7 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  max-height: calc(100vw * (1090/1920));
+  height: calc(100vw * (1090/1920));
+  max-height: 1090px;
 }
 .home__header {
   display: -webkit-box;
