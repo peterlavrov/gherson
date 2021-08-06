@@ -9,10 +9,15 @@
     align-items: center;
     background-color: $home_link_color;
     padding: 100px 0 160px;
+    
+    @include desktop_hd {
+      padding: 60px 0 100px;
+    }
   }
-  
+
   &__link {
     @include team_all_link;
+    font-size: 18px;
     color: $news_link_color;
     position: relative;
     padding-right: 30px;
@@ -21,6 +26,10 @@
     align-self: flex-end;
     z-index: 5;
     margin-bottom: 100px;
+
+    @include desktop_hd {
+      font-size: 14px;
+    }
 
     span {
       position: absolute;
@@ -44,8 +53,6 @@
     }
   }
 
-
-
   &__list {
     display: flex;
     position: relative;
@@ -57,8 +64,8 @@
 .blog {
   display: flex;
   flex-direction: column;
-  padding: 0 calc(5%/3);
-  flex-basis: calc(96%/3);
+  padding: 0 calc(5% / 3);
+  flex-basis: calc(96% / 3);
   border: 1px solid $selection_bgcolor;
   margin-right: 2%;
   padding-bottom: 30px;
@@ -93,14 +100,28 @@
     justify-content: space-between;
     margin-bottom: 20px;
 
+    @include desktop_hd {
+      margin-bottom: 15px;
+    }
+
     &__date {
       @include blog_pubinfo;
-      color: $blog_pubinfo_color
+      font-size: 14px;
+      color: $blog_pubinfo_color;
+
+      @include desktop_hd {
+        font-size: 12px;
+      }
     }
 
     &__author {
       @include blog_pubinfo;
-      color: $blog_pubinfo_color
+      font-size: 14px;
+      color: $blog_pubinfo_color;
+
+      @include desktop_hd {
+        font-size: 12px;
+      }
     }
   }
 
@@ -110,25 +131,49 @@
     border: none;
     background-color: $blog_pubinfo_color;
     margin-bottom: 30px;
+    
+    @include desktop_hd {
+      margin-bottom: 22px;
+    }
   }
 
   h3 {
     @include blog_topic;
     color: $blog_topic_color;
     margin-bottom: 30px;
+    font-size: 22px;
+    line-height: 32px;
+    
+    @include desktop_hd {
+      font-size: 19px;
+      line-height: 28px;
+      margin-bottom: 22px;
+    }
   }
-
+  
   p {
     @include blog_text;
+    font-size: 17px;
+    line-height: 29px;
     color: $blog_text_color;
     margin-bottom: 30px;
+    
+    @include desktop_hd {
+      font-size: 14px;
+      line-height: 24px;
+      margin-bottom: 22px;
+    }
   }
 
   a {
-    font-family: 'FA5PLight';
+    font-family: "FA5PLight";
     font-size: 16px;
     color: $blog_text_color;
     align-self: flex-end;
+
+    @include desktop_hd {
+      font-size: 14px;
+    }
 
     &:hover {
       color: $title_color;

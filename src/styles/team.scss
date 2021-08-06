@@ -73,9 +73,6 @@
     justify-content: flex-end;
     align-items: center;
     padding: 100px 0;
-
-    @include desktop_hd {
-    }
   }
 
   &__member {
@@ -202,8 +199,8 @@
     margin-right: 37px;
     
     @include desktop_hd {
-      width: 19px;
-      height: 19px;
+      width: 20px;
+      height: 20px;
       margin-right: 29px;
     }
     
@@ -223,8 +220,8 @@
         position: absolute;
         display: none;
         content: '';
-        width: 4.5px;
-        height: 4.5px;
+        width: 4px;
+        height: 4px;
         top: 50%;
         left: 50%;
         transform: translate(-50%,-50%);
@@ -248,13 +245,13 @@
       background-color: transparent;
 
       @include desktop_hd {
-        width: 19px;
-        height: 19px;
+        width: 20px;
+        height: 20px;
       }
 
       @include desktop_hd {
-        width: 19px;
-        height: 19px;
+        width: 20px;
+        height: 20px;
       }
 
       &:before {
@@ -274,6 +271,12 @@
       font-family: "CochinRegular";
       font-size: 12px;
       color: $home_link_color;
+      
+      @include desktop_hd {
+        font-size: 9px;
+        top: 15px;
+        left: 15px;
+      }
     }
 
     &__name {
@@ -283,12 +286,20 @@
       font-size: 28px;
       color: $home_link_color;
       margin-bottom: 30px;
+
+      @include desktop_hd {
+        font-size: 22px; 
+      }
     }
 
     &__place {
       font-family: "DidactGothic";
       font-size: 16px;
       color: $home_link_color;
+      
+      @include desktop_hd {
+        font-size: 12px;
+      }
     }
 
     &__delimeter {

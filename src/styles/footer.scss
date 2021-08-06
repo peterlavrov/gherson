@@ -7,6 +7,10 @@
     min-height: 305px;
     display: flex;
     width: 83%;
+
+    @include desktop_hd {
+      min-height: 245px;
+    }
   }
 
   &__contacts {
@@ -16,7 +20,7 @@
     flex-basis: 50%;
     z-index: 5;
   }
-  
+
   &__policies {
     flex-basis: 50%;
     z-index: 5;
@@ -26,11 +30,19 @@
     @include footer_communications;
     font-size: 15px;
     color: $footer_communications_color;
+  
+    @include desktop_hd {
+      font-size: 12px;
+    }
   }
 
   &-contacts {
     &__logo {
       margin-bottom: 40px;
+      
+      @include desktop_hd {
+        margin-bottom: 30px;
+      }
     }
   }
 }
@@ -41,6 +53,10 @@
 
   & a:nth-child(2) {
     margin-bottom: 30px;
+    
+    @include desktop_hd {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -49,11 +65,19 @@
   flex-direction: column;
   justify-content: flex-end;
   padding-bottom: 40px;
+  
+  @include desktop_hd {
+    padding-bottom: 16px;
+  }
 
   &__info {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 50px;
+    
+    @include desktop_hd {
+      margin-bottom:37px;
+    }
   }
 
   &-authority {
@@ -61,13 +85,23 @@
     flex-direction: column;
     @include footer_communications;
     color: $footer_communications_color;
+    font-size: 16px;
     margin-right: 25px;
     align-items: flex-end;
+    
+    @include desktop_hd {
+      font-size: 12px;
+      margin-right: 20px;
+    }
     span {
       text-align: right;
       &:first-child {
         width: 60%;
         margin-bottom: 25px;
+        
+        @include desktop_hd {
+          margin-bottom: 20px;
+        }
       }
     }
   }
@@ -83,8 +117,14 @@
 
   &__link {
     @include footer_communications;
+    font-size: 16px;
     margin-right: 25px;
     
+    @include desktop_hd {
+      font-size: 12px;
+      margin-right: 20px;
+    }
+
     a {
       color: $footer_communications_color;
       &:hover {
@@ -100,6 +140,10 @@
 
 .banner {
   margin-right: 20px;
+  
+  @include desktop_hd {
+    margin-right: 15px;
+  }
   &:last-child {
     margin-right: 0;
   }

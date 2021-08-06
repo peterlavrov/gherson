@@ -6,6 +6,11 @@
   display: flex;
   width: 83%;
 }
+@media screen and (max-width: 1200px) {
+  .footer__container {
+    min-height: 245px;
+  }
+}
 .footer__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -33,8 +38,18 @@
   font-size: 15px;
   color: #979797;
 }
+@media screen and (max-width: 1200px) {
+  .footer__copyright {
+    font-size: 12px;
+  }
+}
 .footer-contacts__logo {
   margin-bottom: 40px;
+}
+@media screen and (max-width: 1200px) {
+  .footer-contacts__logo {
+    margin-bottom: 30px;
+  }
 }
 
 .communications {
@@ -48,6 +63,11 @@
 }
 .communications a:nth-child(2) {
   margin-bottom: 30px;
+}
+@media screen and (max-width: 1200px) {
+  .communications a:nth-child(2) {
+    margin-bottom: 22px;
+  }
 }
 
 .policies {
@@ -63,6 +83,11 @@
           justify-content: flex-end;
   padding-bottom: 40px;
 }
+@media screen and (max-width: 1200px) {
+  .policies {
+    padding-bottom: 16px;
+  }
+}
 .policies__info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -71,6 +96,11 @@
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+  .policies__info {
+    margin-bottom: 37px;
+  }
 }
 .policies-authority {
   display: -webkit-box;
@@ -84,10 +114,17 @@
   font-size: 16px;
   font-style: normal;
   color: #979797;
+  font-size: 16px;
   margin-right: 25px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+}
+@media screen and (max-width: 1200px) {
+  .policies-authority {
+    font-size: 12px;
+    margin-right: 20px;
+  }
 }
 .policies-authority span {
   text-align: right;
@@ -95,6 +132,11 @@
 .policies-authority span:first-child {
   width: 60%;
   margin-bottom: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .policies-authority span:first-child {
+    margin-bottom: 20px;
+  }
 }
 .policies-banners {
   display: -webkit-box;
@@ -113,7 +155,14 @@
   font-family: "DidactGothic";
   font-size: 16px;
   font-style: normal;
+  font-size: 16px;
   margin-right: 25px;
+}
+@media screen and (max-width: 1200px) {
+  .policies__link {
+    font-size: 12px;
+    margin-right: 20px;
+  }
 }
 .policies__link a {
   color: #979797;
@@ -127,6 +176,11 @@
 
 .banner {
   margin-right: 20px;
+}
+@media screen and (max-width: 1200px) {
+  .banner {
+    margin-right: 15px;
+  }
 }
 .banner:last-child {
   margin-right: 0;
