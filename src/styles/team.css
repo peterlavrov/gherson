@@ -18,11 +18,11 @@
   width: 100%;
   top: 150px;
   font-family: "CochinRegular";
-  font-size: 285px;
+  font-size: 14.8vw;
   color: #fcfcfc;
   color: #fff;
   text-align: center;
-  font-size: 180px;
+  font-size: 9.4vw;
 }
 @media screen and (max-width: 1800px) {
   .team__background {
