@@ -1,10 +1,9 @@
 @import "../assets/mixins";
 
-@import url(./header.css);
-@import url(./logo.css);
-@import url(./communications.css);
-@import url(./socials.css);
-@import url(./slider.css);
+@import "./header.scss";
+@import "./communications.scss";
+@import "./socials.scss";
+@import "./slider.scss";
 
 .home {
   &__container {

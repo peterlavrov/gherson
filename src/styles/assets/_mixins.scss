@@ -1,4 +1,4 @@
-@import "./_master.scss";
+@import "./master";
 
 
 @mixin desktop_hd {
@@ -17,6 +17,7 @@
   font-family: "RobotoLight";
   font-size: 40px;
   color: $title_color;
+  font-style: normal;
 
   @include desktop_hd {
     font-size: 30px;

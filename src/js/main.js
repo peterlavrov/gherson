@@ -1,5 +1,3 @@
-import './popup_contact_us.js'
-
 // инициализация слайдера
 
 $(

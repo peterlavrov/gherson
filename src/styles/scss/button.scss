@@ -4,21 +4,23 @@
     display: inline-block;
     padding: 12px 23px 13px;
     @include form_select;
+
     @include desktop_hd {
         padding: 8px 16px 8.5px;
         font-size: 12px;
     }
+
     border: 1px solid $home_link_color;
     color: $home_link_color;
     background-color: transparent;
 
     &:hover {
-        color: $delimeter_color;    
+        color: $delimeter_color;
         border: 1px solid $delimeter_color;
     }
-    
+
     &:active {
-        color: $delimeter_color;    
+        color: $delimeter_color;
         border: 1px solid $delimeter_color;
     }
 }
@@ -26,11 +28,12 @@
 .about .button {
     color: $title_color;
     border: 1px solid $title_color;
-    
+
     &:hover {
         color: $text_color;
         border: 1px solid $text_color;
     }
+
     &:active {
         color: $text_color;
         border: 1px solid $text_color;
@@ -45,22 +48,23 @@
     border: 1px solid $title_color;
     color: $title_color;
     cursor: pointer;
-    
+
     @include desktop_hd {
         padding: 11px 19px 12px 20px;
         width: 130px;
     }
-    
+
     span {
         position: relative;
         right: -5px;
         font-family: 'FA5PLight';
     }
-    
+
     &:hover {
         border: 1px solid $text_color;
         color: $text_color;
     }
+
     &:active {
         border: 1px solid $text_color;
         color: $text_color;

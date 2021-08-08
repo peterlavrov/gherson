@@ -1,24 +1,14 @@
-@import url(./normalize.css);
-@import url(./base.css);
-@import url(./fonts.css);
-@import url(./button.css);
-@import url(./catchword.css);
-@import url(./title.css);
-@import url(./vertical-lines.css);
-@import url(./home.css);
-@import url(./about.css);
-@import url(./services.css);
-@import url(./news.css);
-@import url(./team.css);
-@import url(./blogs.css);
-@import url(./footer.css);
-
-// @import url(./_contact_us-popup.scss);
-// А зачем импотры CSS в SCSS файл?
-// SCSS только для SCSS
-@import "_contact_us-popup.sass"
-
-
-
-
-
+@import "../scss/normalize.scss";
+@import "../scss/base.scss";
+@import "../scss/fonts.scss";
+@import "../scss/button.scss";
+@import "../scss/catchword.scss";
+@import "../scss/title.scss";
+@import "../scss/vertical-lines.scss";
+@import "../scss/home.scss";
+@import "../scss/about.scss";
+@import "../scss/services.scss";
+@import "../scss/news.scss";
+@import "../scss/team.scss";
+@import "../scss/blogs.scss";
+@import "../scss/footer.scss";

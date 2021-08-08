@@ -1,6 +1,6 @@
 @import "../assets/mixins";
-@import url(./about_us.css);
-@import url(./fields.css);
+@import "./about_us.scss";
+@import "./fields.scss";
 
 .about {
   &__container {
