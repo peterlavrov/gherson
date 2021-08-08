@@ -1,0 +1,91 @@
+@import "../assets/mixins";
+
+.select__arrow {
+  position: absolute;
+  display: inline-block;
+}
+
+.select {
+  display: inline-block;
+  max-width: 194px;
+  width: 100%;
+  position: relative;
+  margin-right: 20px;
+
+  @include desktop_hd {
+    max-width: 150px;
+  }
+}
+
+.new-select {
+  position: relative;
+  padding: 16px 25px 18px 26px;
+  @include form_select;
+  cursor: pointer;
+  user-select: none;
+  background: $home_link_color;
+  
+  @include desktop_hd {
+    padding: 12px 19px 13px 20px;
+  }
+
+  &:hover {
+    color: $text_color;
+  }
+}
+
+.new-select__list {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  border: 1px solid #ced4da;
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  background: $home_link_color;
+  user-select: none;
+
+  @include desktop_hd {
+    top: 39px;
+  }
+}
+
+.new-select__list.on {
+  display: block;
+}
+
+.new-select__item span {
+  display: block;
+  padding: 10px 25px 11px 26px;
+  @include form_select;
+  
+  @include desktop_hd {
+    padding: 7.5px 19px 8px 20px;
+  }
+}
+
+.new-select__item span:hover {
+  color: $text_color;
+}
+
+.new-select:after {
+  content: "";
+  display: block;
+  @include form_arrow;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: 21px;
+  top: 16px;
+  transition: all 0.27s ease-in-out;
+  transform: rotate(0deg);
+  
+  @include desktop_hd {
+    right: 12px;
+    top: 12px;
+  }
+}
+
+.new-select.on:after {
+  transform: rotate(180deg);
+}

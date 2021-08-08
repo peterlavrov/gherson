@@ -1,0 +1,63 @@
+@import url(./normalize.css);
+@import url(./base.css);
+@import url(./fonts.css);
+@import url(./button.css);
+@import url(./catchword.css);
+@import url(./title.css);
+@import url(./vertical-lines.css);
+@import url(./home.css);
+@import url(./about.css);
+@import url(./services.css);
+@import url(./news.css);
+@import url(./team.css);
+@import url(./blogs.css);
+@import url(./footer.css);
+.contact_us_popup {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  font-size: 10px;
+  color: #ffffff;
+  background-color: rgba(19, 19, 19, 0.9);
+  font-family: "RobotoLight"; }
+
+.popup_title {
+  font-size: 4em;
+  margin: 1em 0; }
+
+.popup_text {
+  margin: 1em 0;
+  font-size: 2em;
+  font-family: "DidactGothic";
+  width: 50vw; }
+
+.popup_button {
+  font-family: 'RobotoLight';
+  font-size: 16px;
+  padding: 16px 25px 18px 26px;
+  width: 163px;
+  background-color: #ffffff;
+  border: 1px solid #3d3d3c;
+  color: #3d3d3c;
+  text-transform: uppercase; }
+
+.hide {
+  display: none; }
+/*# sourceMappingURL=style.css.map */

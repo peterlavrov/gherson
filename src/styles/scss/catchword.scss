@@ -1,0 +1,17 @@
+@import "../assets/mixins";
+
+.catchword {
+  position: absolute;
+  left: 5.2%;
+  @include catchword;
+
+  @include desktop_hd {
+    font-size: 10px;
+  }
+  writing-mode: vertical-rl;
+  transform-origin: center;
+  transform: rotate(180deg) translateX(50%);
+  z-index: 5;
+  white-space: nowrap;
+
+}

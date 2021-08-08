@@ -1,0 +1,88 @@
+@import "../assets/mixins";
+
+.field {
+  flex-basis: 25%;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  z-index: 5;
+  
+  @include desktop_hd {
+    padding-top: 30px;
+    padding-bottom: 22px;
+  }
+  
+  &__image {
+    height: 56px;
+    width: 56px;
+    margin-bottom: 29px;
+    
+    @include desktop_hd {
+      max-height: 40px;
+      max-width: 40px;
+      margin-bottom: 21px;
+    }
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: contain;
+    }
+  }
+
+  a {
+    display: inline-block;
+    width: 30px;
+    @include arrow_link;
+    color: $title_color;
+
+    &:hover {
+      color: $text_color;
+    }
+
+    &:active {
+      color: $text_color;
+    }
+  }
+
+  &__delimeter {
+    border: none;
+    width: 30px;
+    height: 1px;
+    background-color: $delimeter_color;
+    margin-bottom: 29px;
+
+    @include desktop_hd {
+      margin-bottom: 21px;
+    }
+  }
+  
+  p {
+    @include fields_paragraph;
+    width: 83%;
+    margin-bottom: 30px;
+    line-height: 1.62;
+    @include desktop_hd {
+      margin-bottom: 21px;
+    }
+  }
+  
+  h3 {
+    @include fields_title;
+    margin-bottom: 25px;
+    @include desktop_hd {
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.about-fields {
+  display: flex;
+  justify-content: center;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 2%;
+    width: 83%;
+  }
+}

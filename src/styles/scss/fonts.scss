@@ -1,0 +1,33 @@
+// https://fontie.pixelsvsbytes.com/webfont-generator for smooth loads
+// 
+
+@font-face {
+  font-family: 'CochinRegular';
+  src: url('/src/fonts/CochinRegular.woff2') format('woff2'),
+    url('/src/fonts/CochinRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DidactGothic';
+  src: url('/src/fonts/DidactGothic-Regular.woff2') format('woff2'),
+    url('/src/fonts/DidactGothic-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FA5BRegular';
+  src: url('/src/fonts/FontAwesome5BrandsRegular.woff2') format('woff2'),
+    url('/src/fonts/FontAwesome5BrandsRegular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'FA5PLight';
+  src: url('/src/fonts/FontAwesome5ProLight.woff2') format('woff2'),
+    url('/src/fonts/FontAwesome5ProLight.woff') format('woff');
+}
+
+
+@font-face {
+  font-family: 'RobotoLight';
+  src: url('/src/fonts/Roboto-Light.woff2') format('woff2'),
+    url('/src/fonts/Roboto-Light.woff') format('woff');
+}
