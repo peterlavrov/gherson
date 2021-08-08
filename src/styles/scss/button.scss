@@ -8,26 +8,9 @@
         padding: 8px 16px 8.5px;
         font-size: 12px;
     }
-}
-
-.home-slider .button {
     border: 1px solid $home_link_color;
     color: $home_link_color;
-
-    &:hover {
-        color: $delimeter_color;    
-        border: 1px solid $delimeter_color;
-    }
-    
-    &:active {
-        color: $delimeter_color;    
-        border: 1px solid $delimeter_color;
-    }
-}
-
-.home-feedback a {
-    border: 1px solid $home_link_color;
-    color: $home_link_color;
+    background-color: transparent;
 
     &:hover {
         color: $delimeter_color;    
