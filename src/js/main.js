@@ -1,3 +1,5 @@
+import './popup_contact_us.js'
+
 // инициализация слайдера
 
 $(
@@ -105,3 +107,6 @@ teamSlides.on('mouseenter', e => {
         $('body,html').animate({scrollTop: top}, 500);
     });
 });
+
+
+
