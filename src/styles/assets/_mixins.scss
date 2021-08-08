@@ -1,0 +1,152 @@
+@import "./master";
+
+
+@mixin desktop_hd {
+  @media screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin desktop_uhd {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
+
+@mixin title {
+  font-family: "RobotoLight";
+  font-size: 40px;
+  color: $title_color;
+  font-style: normal;
+
+  @include desktop_hd {
+    font-size: 30px;
+  }
+}
+
+@mixin about_paragraph {
+  font-family: "DidactGothic";
+  font-size: 22px;
+  color: $text_color;
+  
+  @include desktop_hd {
+    font-size: 17px;
+  }
+}
+
+@mixin fields_paragraph {
+  font-family: "DidactGothic";
+  font-size: 18px;
+  color: $text_color;
+
+  @include desktop_hd {
+    font-size: 14px;
+  }
+}
+
+@mixin fields_title {
+  font-family: "RobotoLight";
+  font-size: 24px;
+  color: $title_color;
+  @include desktop_hd {
+    font-size: 19px;
+  }
+}
+
+@mixin arrow_link {
+  font-family: "FA5PLight";
+  font-size: 18px;
+
+  @include desktop_hd {
+    font-size: 14px;
+  }
+}
+
+@mixin news_title {
+  font-family: "RobotoLight";
+  font-size: 28px;
+  color: $title_color;
+}
+
+@mixin catchword {
+  font-family: "CochinRegular";
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 4px;
+  color: $title_color;
+}
+
+@mixin gherson_bg {
+  font-family: "CochinRegular";
+  font-size: 14.8vw;
+  color: $gherson_bgcolor;
+}
+
+@mixin contacts_phone {
+  font-family: "RobotoLight";
+  font-style: normal;
+}
+
+@mixin footer_communications {
+  font-family: "DidactGothic";
+  font-style: normal;
+}
+
+@mixin team_all_link {
+  font-family: "RobotoLight";
+  font-style: normal;
+  font-weight: bolder;
+}
+
+@mixin selection_title {
+  font-family: "RobotoLight";
+  font-size: 50px;
+  letter-spacing: 4px;
+  color: $title_color;
+}
+
+@mixin selection_contact {
+  font-family: "FA5PLight";
+  font-size: 30px;
+}
+
+@mixin selection_hint {
+  font-family: "DidactGothic";
+  font-size: 20px;
+  color: $title_color;
+}
+
+@mixin form_select {
+  font-family: 'RobotoLight';
+  font-size: 16px;
+
+  @include desktop_hd {
+    font-size: 12px;
+  }
+}
+
+@mixin form_arrow {
+  font-family: 'FA5PLight';
+  font-size: 16px;
+  @include desktop_hd {
+    font-size: 12px;
+  }
+}
+
+@mixin news_numeration {
+  font-family: "CochinRegular";
+  font-size: 140px;
+}
+
+@mixin blog_pubinfo {
+  font-family: 'DidactGothic';
+}
+
+@mixin blog_topic {
+  font-family: 'RobotoLight';
+  font-weight: 600;
+}
+
+@mixin blog_text {
+  font-family: 'DidactGothic';
+}

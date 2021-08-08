@@ -1,0 +1,40 @@
+@import "../assets/mixins";
+
+@import "./header.scss";
+@import "./communications.scss";
+@import "./socials.scss";
+@import "./slider.scss";
+
+.home {
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: calc(100vw * (1090/1920));
+    max-height: 1090px;
+  }
+
+  &__header {
+    display: flex;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+    padding-left: 10.4%;
+    padding-right: 9.6%;
+    justify-content: space-between;
+    z-index: 5;
+    @include desktop_hd {
+      padding-left: 8.2%;
+      padding-right: 7.9%;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+}

@@ -105,3 +105,6 @@ teamSlides.on('mouseenter', e => {
         $('body,html').animate({scrollTop: top}, 500);
     });
 });
+
+
+
