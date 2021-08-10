@@ -13,7 +13,7 @@
   }
 
   @include medium_devices {
-    flex-basis: calc(100%/3);
+    flex-basis: calc(100%/2);
   }
   
   &__image {
@@ -68,6 +68,9 @@
     line-height: 1.62;
     @include desktop_hd {
       margin-bottom: 21px;
+    }
+    @include medium_devices {
+      text-align: justify;
     }
   }
   

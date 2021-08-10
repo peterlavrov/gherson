@@ -1223,8 +1223,8 @@ p {
 }
 @media screen and (max-width: 998px) {
   .field {
-    -ms-flex-preferred-size: calc(100%/3);
-        flex-basis: calc(100%/3);
+    -ms-flex-preferred-size: calc(100%/2);
+        flex-basis: calc(100%/2);
   }
 }
 .field__image {
@@ -1291,6 +1291,11 @@ p {
 @media screen and (max-width: 1200px) {
   .field p {
     margin-bottom: 21px;
+  }
+}
+@media screen and (max-width: 998px) {
+  .field p {
+    text-align: justify;
   }
 }
 .field h3 {
