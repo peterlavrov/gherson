@@ -14,6 +14,11 @@
 
   @include desktop_hd {
     max-width: 150px;
+    margin-right: 16px;
+  }
+  @include medium_devices {
+    max-width: 130px;
+    margin-right: 12px;
   }
 }
 
@@ -27,6 +32,10 @@
   
   @include desktop_hd {
     padding: 12px 19px 13px 20px;
+  }
+  @include medium_devices {
+    padding: 10px 16px 11px 17px;
+    font-size: 11px;
   }
 
   &:hover {
@@ -47,6 +56,10 @@
 
   @include desktop_hd {
     top: 39px;
+  }
+  
+  @include medium_devices {
+    top: 34px;
   }
 }
 
@@ -83,6 +96,13 @@
   @include desktop_hd {
     right: 12px;
     top: 12px;
+  }
+  @include desktop_hd {
+    right: 10px;
+    top: 10px;
+    font-size: 11px;
+    width: 11px;
+    height: 11px;
   }
 }
 

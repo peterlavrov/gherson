@@ -1,25 +1,59 @@
 @import "../assets/mixins";
 
-.home-contacts a {
-  @include contacts_phone;
-  font-size: 18px;
-  color: $home_link_color;
-  
+.home-contacts {
+  &__phone {
+    margin-right: 20px;
+    @include medium_devices {
+    }
+  }
+
+  a {
+    @include contacts_phone;
+    font-size: 18px;
+    color: $home_link_color;
+
     @include desktop_uhd {
       font-size: 15px;
     }
 
-  @include desktop_hd {
-    font-size: 14px;
+    @include desktop_hd {
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $delimeter_color;
+    }
+
+    &:active {
+      color: $delimeter_color;
+    }
   }
-  
-  &:hover {
-    color: $delimeter_color;
+}
+
+.feedback-popup .communications {
+  width: 50%;
+  a {
+    @include contacts_phone;
+    font-size: 18px;
+    color: $home_link_color;
+
+    @include desktop_uhd {
+      font-size: 15px;
+    }
+
+    @include desktop_hd {
+      font-size: 14px;
+    }
+
+    &:hover {
+      color: $delimeter_color;
+    }
+
+    &:active {
+      color: $delimeter_color;
+    }
   }
-  
-  &:active {
-    color: $delimeter_color;
-  }
+
 }
 
 .communications a {
@@ -32,11 +66,11 @@
   @include desktop_hd {
     font-size: 14px;
   }
-  
+
   &:hover {
     color: $blog_topic_color;
   }
-  
+
   &:active {
     color: $blog_topic_color;
   }

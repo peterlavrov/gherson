@@ -52,15 +52,11 @@
 
     p {
     font-family: 'RobotoLight';
-    font-size: 60px;
-
-    @include desktop_hd {
-      font-size: 40px;
-    }
+    font-size: 3.125vw;
 
     color: $home_link_color;
     text-transform: uppercase;
-    margin-bottom: 50px;
+    margin-bottom: 2.6vw;
     }
   }
 

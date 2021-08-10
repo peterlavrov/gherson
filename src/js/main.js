@@ -95,7 +95,7 @@ teamSlides.on('mouseenter', e => {
     teamControls.eq(currentSlide).addClass('team-control--active');
   });
 
-  // анимация перехода из меню по якорям
+  // анимация перехода из меню по якорям и гамбургер меню
 
   $(document).ready(function(){
     $("#menu").on("click","a", function (event) {
@@ -104,6 +104,24 @@ teamSlides.on('mouseenter', e => {
             top = $(id).offset().top;
         $('body,html').animate({scrollTop: top}, 500);
     });
+    $('.hamburger').click(function(e){
+        e.preventDefault();
+        $(this).toggleClass('opened');
+        $('.home-navigation__list').slideToggle();
+    });
+
+});
+
+// работа с попапом
+
+$('.home-feedback__button').click(function (event){
+    event.preventDefault();
+    $('.feedback-popup').removeClass('hide');
+});
+
+$('.feedback-popup__close').click(function (event){
+    event.preventDefault();
+    $('.feedback-popup').addClass('hide');
 });
 
 

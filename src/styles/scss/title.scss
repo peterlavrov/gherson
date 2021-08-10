@@ -3,3 +3,9 @@
 .title {
   @include title;
 }
+
+.feedback-popup {
+  .title {
+    color: $home_link_color;
+  }
+}

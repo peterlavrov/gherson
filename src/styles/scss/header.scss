@@ -7,10 +7,15 @@
   &__navigation {
     display: flex;
     width: 44.6%;
+    @include medium_devices {
+      width: 12%;
+      align-items: flex-start;
+    }
   }
 
   &__logo {
     padding-right: 152px;
+    align-self: flex-start;
 
     @include desktop_uhd {
       width: 220px;
@@ -39,11 +44,21 @@
 
   &__contacts {
     display: flex;
-    align-items: center ;
+    align-items: center;
+    
+    @include medium_devices {
+      position: relative;
+      right: 15%;
+    }
   }
-
+  
   &__feedback {
     display: flex;
     align-items: center ;
+    @include medium_devices {
+      align-self: flex-start;
+    }
   }
 }
+
+

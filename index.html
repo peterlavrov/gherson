@@ -8,11 +8,40 @@
   <link rel="stylesheet" type="text/css" href="./src/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="./src/slick/slick-theme.css" />
   <link rel="stylesheet" href="./src/styles/css/style.css">
-	
+
   <title>GHERSON</title>
 </head>
 
 <body>
+  <div class="feedback__popup feedback-popup hide">
+    <h2 class="title">
+      WORKING FOR YOU
+    </h2>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque esse obcaecati ab eligendi vel, ipsa iure
+      suscipit vitae molestiae ducimus incidunt fuga at reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing
+      elit. Natus eaque esse obcaecati ab eligendi vel, ipsa iure suscipit vitae molestiae ducimus incidunt fuga at
+      reiciendis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus eaque esse obcaecati ab eligendi vel,
+      ipsa iure suscipit vitae molestiae ducimus incidunt fuga at reiciendis. Lorem ipsum dolor sit amet consectetur,
+      adipisicing elit. Natus eaque esse obcaecati ab eligendi vel, ipsa iure suscipit vitae molestiae ducimus incidunt
+      fuga at reiciendis.
+    </p>
+    <p>
+      <i>
+        Fuga omnis!
+      </i>
+    </p>
+    <div class="communications">
+      <a href="tel://+4402077244488" class="communications__phone phone">+44 (0)20 7724 4488</a>
+      <a href="mailto://gherson@co.uk" class="communications__email">gherson@co.uk</a>
+      <ul class="feedback-popup__socials">
+        <li class="feedback-popup__item"><a href="#" class="feedback-popup__link"></a></li>
+        <li class="feedback-popup__item"><a href="#" class="feedback-popup__link"></a></li>
+        <li class="feedback-popup__item"><a href="#" class="feedback-popup__link"></a></li>
+      </ul>
+    </div>
+    <button class="feedback-popup__close button">Thank you</button>
+  </div>
 
   <div class="wrapper">
     <main class="main">
@@ -44,12 +73,17 @@
                   <a href="#career">CAREER</a>
                 </li>
               </ul>
+              <div href="#" class="home-navigation__hamburger hamburger">
+                <div class="hamburger__line"></div>
+              </div>
             </nav>
-            <address class="home-header__contacts home-contacts">
-              <a href="tel://+4402077244488">(0)20 7724 4488</a>
-            </address>
-            <div class="home-header__feedback home-feedback">
-              <a href="#" class="button">CONTACT US</a>
+            <div class="home-header__contacts home-contacts">
+              <address class="home-contacts__phone">
+                <a href="tel://+4402077244488">(0)20 7724 4488</a>
+              </address>
+              <div class="home-header__feedback home-feedback">
+                <a href="#" class="home-feedback__button button">CONTACT US</a>
+              </div>
             </div>
           </header>
           <div class="home__slider home-slider">
@@ -58,7 +92,7 @@
                 <li class="slider-slides__slide slides-slide">
                   <div class="slides-slide__content">
                     <p>Award winning, London-based independent
-                      immigration solicitors</p><a href="#" class="button" data-trigger='popup-button' >FIND OUT
+                      immigration solicitors</p><a href="#" class="button" data-trigger='popup-button'>FIND OUT
                       MORE</a>
                   </div>
                   <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
@@ -66,7 +100,7 @@
                 <li class="slider-slides__slide slides-slide">
                   <div class="slides-slide__content">
                     <p>Award winning, London-based independent
-                      immigration solicitors</p><a href="#" class="button" data-trigger='popup-button' >FIND OUT
+                      immigration solicitors</p><a href="#" class="button" data-trigger='popup-button'>FIND OUT
                       MORE</a>
                   </div>
                   <img src="./src/images/slide_background.png" alt="slide background" class="slides-slide__background">
@@ -468,7 +502,7 @@
   </div>
 
 
-	
+
   <script type="text/javascript" src="./src/slick/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="./src/slick/slick.js"></script>
   <script type="module" src="./src/js/main.js"></script>

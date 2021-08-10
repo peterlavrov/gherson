@@ -11,6 +11,10 @@
     padding-top: 30px;
     padding-bottom: 22px;
   }
+
+  @include medium_devices {
+    flex-basis: calc(100%/3);
+  }
   
   &__image {
     height: 56px;

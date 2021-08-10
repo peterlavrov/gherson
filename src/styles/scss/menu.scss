@@ -1,31 +1,129 @@
 @import "../assets/mixins";
 
-.home-navigation__list {
-  display: flex;
-  flex-grow: 1;
-  li {
+.home-navigation {
+  position: relative;
+  align-self: center;
+  justify-content: flex-end;
+
+  @include medium_devices {
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 0;
+    right: 78px;
+  }
+
+  &__list {
     display: flex;
     flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    a {
-      font-family: 'RobotoLight';
-      font-size: 18px;
-      color: $home_link_color;
 
-      @include desktop_uhd {
-        font-size: 15px;
-      }
+    @include medium_devices {
+      display: none;
+      flex-direction: column;
+      align-self: flex-end;
+    }
 
-      @include desktop_hd {
-        font-size: 14px;
+    li {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      align-items: center;
+
+      
+      @include medium_devices {
+        justify-content: flex-end;
+        margin-bottom: 10px;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
-      &:hover {
-        color: $delimeter_color;
+      
+      a {
+        font-family: 'RobotoLight';
+        font-size: 18px;
+        color: $home_link_color;
+        
+        @include desktop_uhd {
+          font-size: 15px;
+        }
+        
+        @include desktop_hd {
+          font-size: 14px;
+        }
+        
+        &:hover {
+          color: $delimeter_color;
+        }
+
+        &:active {
+          color: $delimeter_color;
+        }
       }
-      &:active {
-        color: $delimeter_color;
-      }
+    }
+  }
+}
+
+.hamburger {
+  display: none;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  align-self: flex-end;
+
+  @include medium_devices {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+
+  &__line {
+    display: block;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 3px;
+    border-radius: 1.5px;
+    background-color: $home_link_color;
+    transition: .5s;
+
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      top: -12px;
+      width: 30px;
+      height: 3px;
+      background-color: $home_link_color;
+      transition: .5s;
+      border-radius: 1.5px;
+    }
+
+    &:after {
+      display: block;
+      position: absolute;
+      content: '';
+      top: 12px;
+      width: 30px;
+      height: 3px;
+      background-color: $home_link_color;
+      transition: .5s;
+      border-radius: 1.5px;
+    }
+  }
+}
+
+.hamburger.opened {
+  .hamburger__line {
+    background-color: transparent;
+    transition: .5s;
+
+    &:before {
+      top: 0;
+      transform: rotate(-45deg);
+    }
+
+    &:after {
+      top: 0;
+      transform: rotate(45deg);
     }
   }
 }

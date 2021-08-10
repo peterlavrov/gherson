@@ -10,6 +10,9 @@
   &__background {
     width: 100%;
     height: 530px;
+    @include medium_devices {
+      height: 420px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -25,9 +28,10 @@
     width: 37%;
     max-height: 100%;
     background-color: $selection_bgcolor;
-
-    @include desktop_hd {
-
+    
+    @include medium_devices {
+      padding: 4% 4.1% 4.01%;
+      
     }
   }
 
@@ -57,6 +61,11 @@
       font-size: 37px;
       margin-bottom: 30px;
     }
+
+    @include medium_devices {
+      font-size: 28px;
+      margin-bottom: 23px
+    }
   }
 
   &__hint {
@@ -65,6 +74,10 @@
     @include desktop_hd {
       font-size: 15px;
       margin-bottom: 30px;
+    }
+    @include medium_devices {
+      font-size: 12px;
+      margin-bottom: 22px;
     }
   }
 
@@ -75,6 +88,9 @@
 
       @include desktop_hd {
         margin-bottom: 28px;
+      }
+      @include medium_devices {
+        margin-bottom: 21px;
       }
     }
 
@@ -89,6 +105,9 @@
 
         @include desktop_hd {
           font-size: 22px;
+        }
+        @include desktop_hd {
+          font-size: 18px;
         }
         color: $title_color;
         &:hover {

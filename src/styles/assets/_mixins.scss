@@ -1,5 +1,10 @@
 @import "./master";
 
+@mixin desktop_uhd {
+  @media screen and (max-width: 1800px) {
+    @content;
+  }
+}
 
 @mixin desktop_hd {
   @media screen and (max-width: 1200px) {
@@ -7,11 +12,19 @@
   }
 }
 
-@mixin desktop_uhd {
-  @media screen and (max-width: 1800px) {
+@mixin medium_devices {
+  @media screen and (max-width: 998px) {
     @content;
   }
 }
+
+@mixin tablets {
+  @media screen and (max-width: 767px) {
+    @content;
+  }
+}
+
+
 
 @mixin title {
   font-family: "RobotoLight";

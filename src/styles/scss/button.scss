@@ -53,6 +53,11 @@
         padding: 11px 19px 12px 20px;
         width: 130px;
     }
+    @include medium_devices {
+        padding: 9px 16px 10px 17px;
+        width: 130px;
+        font-size: 11px;
+    }
 
     span {
         position: relative;
@@ -69,4 +74,8 @@
         border: 1px solid $text_color;
         color: $text_color;
     }
+}
+
+.feedback-popup .button {
+    cursor: pointer;
 }
