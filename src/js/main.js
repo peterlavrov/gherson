@@ -114,14 +114,16 @@ teamSlides.on('mouseenter', e => {
 
 // работа с попапом
 
-$('.home-feedback__button').click(function (event){
+$('.home-feedback').click(function (event){
     event.preventDefault();
     $('.feedback-popup').removeClass('hide');
+    $('body').addClass('fixed');
 });
 
 $('.feedback-popup__close').click(function (event){
     event.preventDefault();
     $('.feedback-popup').addClass('hide');
+    $('body').removeClass('fixed');
 });
 
 

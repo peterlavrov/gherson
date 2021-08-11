@@ -225,3 +225,39 @@
         height: 18px;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .slick-dots {
+        left: 18px;
+    }
+    .slick-dots li {
+        min-width: 16px;
+        min-height: 16px;
+        margin-bottom: 12px;
+    }
+
+    .slick-dots li:last-child {
+        margin-bottom: 0;
+    }
+    .slick-dots li button {
+        padding: 0;
+        width: 9px;
+        height: 9px;
+    }
+
+    .slick-dots li button:before {
+        width: 3px;
+        height: 3px;
+    }
+
+    .slick-dots li.slick-active button {
+        width: 16px;
+        height: 16px;
+    }
+
+    .slick-dots li button:hover,
+    .slick-dots li button:focus {
+        width: 16px;
+        height: 16px;
+    }
+}

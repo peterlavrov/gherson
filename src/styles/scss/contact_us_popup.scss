@@ -8,11 +8,11 @@
 	justify-content: center;
 	width: 100%;
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 99;
-	font-size: 10px;
+	font-size: 16px;
 	color: $home_link_color;
 	background-color: rgba($popup_bg_color, 0.9);
 
@@ -22,6 +22,18 @@
     width: 50%;
     text-align: justify;
     margin-bottom: 10px;
+
+		@include desktop_hd {
+			font-size: 0.9em;
+		}
+		
+		@include medium_devices {
+			font-size: 0.8em;
+		}
+		
+		@include tablets {
+			font-size: 0.7em;
+		}
   }
 }
 

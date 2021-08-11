@@ -8,6 +8,12 @@
   @include desktop_hd {
     font-size: 10px;
   }
+  @include medium_devices {
+    font-size: 9px;
+  }
+  @include tablets {
+    font-size: 8px;
+  }
   writing-mode: vertical-rl;
   transform-origin: center;
   transform: rotate(180deg) translateX(50%);

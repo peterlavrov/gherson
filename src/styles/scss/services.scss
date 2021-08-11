@@ -13,6 +13,9 @@
     @include medium_devices {
       height: 420px;
     }
+    @include tablets {
+      height: 360px;
+    }
     img {
       width: 100%;
       height: 100%;
@@ -65,6 +68,11 @@
     @include medium_devices {
       font-size: 28px;
       margin-bottom: 23px
+    }
+
+    @include tablets {
+      font-size: 23px;
+      margin-bottom: 18px;
     }
   }
 

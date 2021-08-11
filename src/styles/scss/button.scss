@@ -4,10 +4,21 @@
     display: inline-block;
     padding: 12px 23px 13px;
     @include form_select;
+    font-size: 16px;
+    cursor: pointer;
 
     @include desktop_hd {
         padding: 8px 16px 8.5px;
         font-size: 12px;
+    }
+
+    @include medium_devices {
+        padding: 9px 16px 10px 17px;
+        font-size: 11px;
+    }
+    @include tablets {
+        padding: 7px 13px 8px 14px;
+        font-size: 9px;
     }
 
     border: 1px solid $home_link_color;
@@ -42,22 +53,9 @@
 
 .form .button {
     @include form_select;
-    padding: 16px 25px 18px 26px;
-    width: 163px;
     background-color: $home_link_color;
     border: 1px solid $title_color;
     color: $title_color;
-    cursor: pointer;
-
-    @include desktop_hd {
-        padding: 11px 19px 12px 20px;
-        width: 130px;
-    }
-    @include medium_devices {
-        padding: 9px 16px 10px 17px;
-        width: 130px;
-        font-size: 11px;
-    }
 
     span {
         position: relative;
@@ -74,8 +72,4 @@
         border: 1px solid $text_color;
         color: $text_color;
     }
-}
-
-.feedback-popup .button {
-    cursor: pointer;
 }

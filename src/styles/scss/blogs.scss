@@ -25,9 +25,21 @@
     align-self: flex-end;
     z-index: 5;
     margin-bottom: 100px;
-
+    
     @include desktop_hd {
       font-size: 14px;
+      margin-bottom: 85px;
+      top: -23px;
+    }
+    @include medium_devices {
+      font-size: 13px;
+      margin-bottom: 70px;
+      top: -21px;
+    }
+    @include tablets {
+      font-size: 12px;
+      margin-bottom: 50px;
+      top: -18px;
     }
 
     span {
@@ -57,6 +69,10 @@
     position: relative;
     width: 79%;
     flex-wrap: wrap;
+
+    @include tablets {
+      justify-content: center;
+    }
   }
 }
 
@@ -68,6 +84,16 @@
   border: 1px solid $selection_bgcolor;
   margin-right: 2%;
   padding-bottom: 30px;
+
+  @include tablets {
+    flex-basis: 70%;
+    margin-right: 0;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &:hover {
     background-color: $selection_bgcolor;
@@ -83,10 +109,17 @@
     max-height: 220px;
     margin-bottom: 20px;
 
+    @include tablets {
+      width: 50%;
+      align-self: center;
+    }
+
     img {
+      display: inline-block;
       width: 100%;
       height: 100%;
       object-fit: cover;
+
     }
   }
 

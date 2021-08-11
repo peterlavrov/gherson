@@ -17,7 +17,7 @@
     margin-right: 16px;
   }
   @include medium_devices {
-    max-width: 130px;
+    max-width: 120px;
     margin-right: 12px;
   }
 }
@@ -29,13 +29,15 @@
   cursor: pointer;
   user-select: none;
   background: $home_link_color;
+  font-size: 16px;
   
   @include desktop_hd {
     padding: 12px 19px 13px 20px;
+    font-size: 12px;
   }
   @include medium_devices {
     padding: 10px 16px 11px 17px;
-    font-size: 11px;
+    font-size: 10px;
   }
 
   &:hover {
@@ -71,9 +73,15 @@
   display: block;
   padding: 10px 25px 11px 26px;
   @include form_select;
+  font-size: 16px;
   
   @include desktop_hd {
     padding: 7.5px 19px 8px 20px;
+    font-size: 12px;
+  }
+
+  @include medium_devices {
+    font-size: 10px;
   }
 }
 
@@ -92,17 +100,21 @@
   top: 16px;
   transition: all 0.27s ease-in-out;
   transform: rotate(0deg);
+  font-size: 16px;
   
   @include desktop_hd {
-    right: 12px;
+    width: 12px;
+    height: 12px;
+    right: 14px;
     top: 12px;
+    font-size: 12px;
   }
-  @include desktop_hd {
+  @include medium_devices {
     right: 10px;
-    top: 10px;
-    font-size: 11px;
-    width: 11px;
-    height: 11px;
+    top: 9px;
+    font-size: 10px;
+    width: 10px;
+    height: 10px;
   }
 }
 

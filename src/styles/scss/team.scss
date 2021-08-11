@@ -8,6 +8,16 @@
     justify-content: center;
     background-color: #f6f6f6;
     height: 832px;
+
+    @include desktop_hd {
+      height: 720px;
+    }
+    @include medium_devices {
+      height: 670px;
+    }
+    @include tablets {
+      height: 620px;
+    }
   }
   
   &__background {
@@ -19,11 +29,12 @@
     text-align: center;
     font-size: 9.4vw;
 
-    @include desktop_uhd {
-      font-size: 160px;
-    }
     @include desktop_hd {
-      font-size: 140px;
+      top: 180px;
+    }
+    
+    @include medium_devices {
+      top: 200px;
     }
   }
 
@@ -42,6 +53,15 @@
     }
     @include desktop_hd {
       font-size: 14px;
+      top: -23px;
+    }
+    @include medium_devices {
+      font-size: 13px;
+      top: -21px;
+    }
+    @include tablets {
+      font-size: 12px;
+      top: -18px;
     }
 
     span {
@@ -78,6 +98,16 @@
     justify-content: flex-end;
     align-items: center;
     padding: 100px 0;
+    
+    @include desktop_hd {
+      padding: 85px 0;
+    }
+    @include medium_devices {
+      padding: 75px 0;
+    }
+    @include tablets {
+      padding: 65px 0;
+    }
   }
 
   &__member {
@@ -88,15 +118,22 @@
     transition: all 0.2s ease;
     
     @include desktop_uhd {
+      max-width: calc((100% / 6) - 2%);
       height: 340px;
       width: 257px; 
-      max-width: calc((100% / 6) - 2%);
     }
 
     @include desktop_hd {
       height: 285px;
       width: 215px; 
-      max-width: calc((100% / 6) - 2%);
+    }
+    @include medium_devices {
+      height: 260px;
+      width: 200px; 
+    }
+    @include tablets {
+      height: 220px;
+      width: 185px; 
     }
 
     &:hover {
@@ -108,6 +145,12 @@
       }
       @include desktop_hd {
         height: 285px;
+      }
+      @include medium_devices {
+        height: 260px;
+      }
+      @include tablets {
+        height: 220px;
       }
 
       .team-member__avatar {
@@ -152,6 +195,12 @@
       }
       @include desktop_hd {
         height: 285px;
+      }
+      @include medium_devices {
+        height: 260px;
+      }
+      @include tablets {
+        height: 220px;
       }
 
       .team-member__avatar {
@@ -299,6 +348,16 @@
         top: 15px;
         left: 15px;
       }
+      @include medium_devices {
+        font-size: 8px;
+        top: 12px;
+        left: 12px;
+      }
+      @include tablets {
+        font-size: 7px;
+        top: 10px;
+        left: 10px;
+      }
     }
 
     &__name {
@@ -315,6 +374,12 @@
       @include desktop_hd {
         font-size: 22px; 
       }
+      @include medium_devices {
+        font-size: 19px; 
+      }
+      @include tablets {
+        font-size: 17px; 
+      }
     }
 
     &__place {
@@ -327,6 +392,12 @@
       }
       @include desktop_hd {
         font-size: 12px;
+      }
+      @include medium_devices {
+        font-size: 11px;
+      }
+      @include tablets {
+        font-size: 10px;
       }
     }
 

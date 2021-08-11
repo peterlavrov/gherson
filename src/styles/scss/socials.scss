@@ -10,6 +10,9 @@
     width: 65px;
     bottom: 30px;
   }
+  @include medium_devices {
+    width: 55px;
+  }
 
   &__list {
     display: flex;
@@ -19,8 +22,13 @@
 
   &__item {
     margin-bottom: 24px;
+    
     @include desktop_hd {
       margin-bottom: 18px;
+    }
+    
+    @include tablets {
+      margin-bottom: 14px;
     }
     &:last-child {
       margin-bottom: 0;
@@ -31,6 +39,10 @@
 
       @include desktop_hd {
         font-size: 14px;
+      }
+      
+      @include tablets {
+        font-size: 12px;
       }
       color: $home_socials_color;
       &:hover {
@@ -50,6 +62,12 @@
   @include desktop_hd {
     margin-bottom: 30px;
   }
+  @include medium_devices {
+    margin-bottom: 22px;
+  }
+  @include tablets {
+    margin-bottom: 18px;
+  }
 
   &__item {
     margin-right: 24px;
@@ -68,6 +86,9 @@
       
       @include desktop_hd {
         font-size: 14px;
+      }
+      @include tablets {
+        font-size: 12px;
       }
 
       &:hover {
@@ -92,66 +113,4 @@
 
   }
   
-  // width: 100px;
-  // z-index: 10;
-  // display: flex;
-  // align-items: center;
-  // margin-bottom: 39px;
-  
-  // @include desktop_hd {
-  //   margin-bottom: 30px;
-  // }
-
-  // &__item {
-  //   margin-right: 24px;
-    
-  //   @include desktop_hd {
-  //     margin-right: 18px;
-  //   }
-
-  //   &:last-child {
-  //     margin-right: 0;
-  //   }
-  //   a {
-  //     font-family: "FA5BRegular";
-  //     font-size: 18px;
-  //     color: $footer_communications_color;
-      
-  //     @include desktop_hd {
-  //       font-size: 14px;
-  //     }
-
-  //     &:hover {
-  //       color: $blog_topic_color;
-  //     }
-  //   }
-  // }
-
-  // ul {
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   li {
-  //     margin-right: 20px;
-  //     @include desktop_hd {
-  //       margin-bottom: 18px;
-  //     }
-  
-  //     &:last-child {
-  //       margin-right: 0;
-  //     }
-  //     a {
-  //       font-family: "FA5BRegular";
-  
-  //       @include desktop_hd {
-  //         font-size: 14px;
-  //       }
-  //       color: $home_socials_color;
-  //       &:hover {
-  //         color: $delimeter_color;
-  //       }
-  //     }
-  //   }
-  // }
-
 }

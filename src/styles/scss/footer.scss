@@ -18,11 +18,17 @@
     justify-content: center;
     flex-basis: 50%;
     z-index: 5;
+    @include tablets {
+      flex-basis: 45%;
+    }
   }
-
+  
   &__policies {
     flex-basis: 50%;
     z-index: 5;
+    @include tablets {
+      flex-basis: 55%;
+    }
   }
 
   &__copyright {
@@ -42,6 +48,19 @@
       @include desktop_hd {
         margin-bottom: 30px;
       }
+      @include medium_devices {
+        margin-bottom: 25px;
+      }
+      @include tablets {
+        width: 120px;
+        margin-bottom: 20px;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
     }
   }
 }
@@ -56,6 +75,12 @@
     @include desktop_hd {
       margin-bottom: 22px;
     }
+    @include medium_devices {
+      margin-bottom: 18px;
+    }
+    @include tablets {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -69,6 +94,10 @@
     padding-bottom: 16px;
   }
 
+  @include medium_devices {
+    padding-bottom: 25px;
+  }
+
   &__info {
     display: flex;
     justify-content: flex-end;
@@ -76,6 +105,10 @@
     
     @include desktop_hd {
       margin-bottom:37px;
+    }
+
+    @include medium_devices {
+
     }
   }
 
@@ -94,12 +127,28 @@
     }
     span {
       text-align: right;
+      @include medium_devices {
+        width: 80%;
+      }
+
+      @include tablets {
+        width: 100%;
+      }
+
       &:first-child {
         width: 60%;
         margin-bottom: 25px;
         
         @include desktop_hd {
           margin-bottom: 20px;
+        }
+
+        @include medium_devices {
+          width: 100%;
+        }
+
+        @include tablets {
+          text-align: justify;
         }
       }
     }
@@ -124,6 +173,10 @@
       margin-right: 20px;
     }
 
+    @include medium_devices {
+      text-align: center;
+    }
+
     a {
       color: $footer_communications_color;
       &:hover {
@@ -143,7 +196,22 @@
   @include desktop_hd {
     margin-right: 15px;
   }
+  
+  @include tablets {
+    margin-right: 10px;
+    height: 100px;
+    width: 100px;
+  }
+
   &:last-child {
     margin-right: 0;
+  }
+
+  img {
+    @include tablets {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
   }
 }

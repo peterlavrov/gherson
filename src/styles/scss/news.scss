@@ -8,14 +8,17 @@
     &-item {
         position: relative;
         flex-basis: calc(100% / 3);
-        min-height: 300px;
-        padding-top: 40px;
-        padding-bottom: 130px;
+        min-height: 15.685vw;
+        padding-top: 2.6vw;
+        padding-bottom: 7.3vw;
         z-index: 5;
 
         @include desktop_hd {
-            padding-top: 30px;
-            padding-bottom: 50px;
+        
+        }
+
+        @include medium_devices {
+            flex-basis: calc(100%/2);
         }
 
         &__numeration {
@@ -40,14 +43,29 @@
             color: $news_link_color;
             white-space: nowrap;
             min-width: 30%;
+            font-size: 16px;
+
+            @include desktop_hd {
+                font-size: 15px;
+            }
+
+            @include medium_devices {
+                font-size: 14px;
+            }
+
+            @include medium_devices {
+                font-size: 13px;
+            }
 
             span {
                 position: relative;
                 color: $title_color;
                 right: -20px;
             }
+
             &:hover {
                 color: $text_color;
+
                 span {
                     color: $delimeter_color;
                 }
@@ -55,6 +73,7 @@
 
             &:active {
                 color: $text_color;
+
                 span {
                     color: $delimeter_color;
                 }
@@ -65,7 +84,23 @@
             @include fields_paragraph;
             width: 83%;
             margin-bottom: 30px;
-            line-height: 29px;
+            line-height: 1.5;
+            font-size: 18px;
+
+            @include desktop_hd {
+                font-size: 14px;
+            }
+
+            @include medium_devices {
+                text-align: justify;
+                margin-bottom: 25px;
+                font-size: 12px;
+            }
+
+            @include tablets {
+                margin-bottom: 20px;
+                font-size: 10px;
+            }
         }
 
         h3 {
@@ -77,13 +112,23 @@
             @include desktop_hd {
                 font-size: 23px;
             }
+
+            @include medium_devices {
+                font-size: 21px;
+            }
+
+            @include tablets {
+                font-size: 19px;
+            }
         }
     }
+
     &-block {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 100px;
+
         &__list {
             display: flex;
             flex-wrap: wrap;

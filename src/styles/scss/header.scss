@@ -7,9 +7,14 @@
   &__navigation {
     display: flex;
     width: 44.6%;
+    
     @include medium_devices {
       width: 12%;
       align-items: flex-start;
+    }
+    
+    @include tablets {
+      width: 11%;
     }
   }
 
@@ -27,6 +32,11 @@
       padding-right: 40px;
     }
 
+    @include tablets {
+      width: 160px;
+      padding-right: 30px;
+    }
+
     img {
 
       @include desktop_uhd {
@@ -35,9 +45,6 @@
         object-fit: contain;
       }
       @include desktop_hd {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
       }
     }
   }
