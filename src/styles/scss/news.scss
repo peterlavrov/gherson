@@ -13,12 +13,12 @@
         padding-bottom: 7.3vw;
         z-index: 5;
 
-        @include desktop_hd {
-        
-        }
-
         @include medium_devices {
             flex-basis: calc(100%/2);
+        }
+
+        @include phones {
+            flex-basis: 70%;
         }
 
         &__numeration {
@@ -33,6 +33,18 @@
 
             @include desktop_hd {
                 font-size: 100px;
+            }
+
+            @include medium_devices {
+                font-size: 80px;
+            }
+
+            @include tablets {
+                font-size: 65px;
+            }
+
+            @include phones {
+                font-size: 50px;
             }
         }
 
@@ -101,6 +113,10 @@
                 margin-bottom: 20px;
                 font-size: 10px;
             }
+
+            @include phones {
+                width: 100%;
+            }
         }
 
         h3 {
@@ -129,11 +145,21 @@
         align-items: center;
         padding-top: 100px;
 
+        @include tablets {
+            padding-top: 60px;
+        }
+
         &__list {
             display: flex;
             flex-wrap: wrap;
             padding-left: 2%;
             width: 83%;
+
+            @include phones {
+                width: 100%;
+                padding-left: 0;
+                justify-content: center;
+            }
         }
     }
 }

@@ -16,6 +16,10 @@
     @include tablets {
       width: 11%;
     }
+
+    @include phones {
+      width: 14%;
+    }
   }
 
   &__logo {
@@ -37,14 +41,17 @@
       padding-right: 30px;
     }
 
+    @include phones {
+      width: 130px;
+      padding-right: 20px;
+    }
+
     img {
 
       @include desktop_uhd {
         width: 100%;
         height: 100%;
         object-fit: contain;
-      }
-      @include desktop_hd {
       }
     }
   }

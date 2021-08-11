@@ -50,6 +50,10 @@
     margin-left: 200px;
     z-index: 5;
 
+    @include tablets {
+      margin-left: 130px;
+    }
+
     p {
     font-family: 'RobotoLight';
     font-size: 3.125vw;

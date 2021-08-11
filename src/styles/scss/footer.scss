@@ -10,6 +10,10 @@
     @include desktop_hd {
       min-height: 245px;
     }
+
+    @include phones {
+      min-height: 200px;
+    }
   }
 
   &__contacts {
@@ -54,6 +58,9 @@
       @include tablets {
         width: 120px;
         margin-bottom: 20px;
+      }
+      @include phones {
+        width: 105px;
       }
 
       img {
@@ -127,6 +134,12 @@
       font-size: 12px;
       margin-right: 20px;
     }
+
+    @include phones {
+      font-size: 11px;
+      margin-right: 8px;
+    }
+    
     span {
       text-align: right;
       @include medium_devices {
@@ -135,6 +148,10 @@
 
       @include tablets {
         width: 100%;
+      }
+
+      @include phones {
+        width: 80%;
       }
 
       &:first-child {
@@ -151,6 +168,10 @@
 
         @include tablets {
           text-align: justify;
+        }
+
+        @include phones {
+          text-align: right;
         }
       }
     }
@@ -203,6 +224,12 @@
     margin-right: 10px;
     height: 100px;
     width: 100px;
+  }
+  
+  @include phones {
+    margin-right: 6px;
+    height: 80px;
+    width: 80px;
   }
 
   &:last-child {

@@ -20,6 +20,10 @@
         padding: 7px 13px 8px 14px;
         font-size: 9px;
     }
+    @include phones {
+        padding: 6px 11px 7px 12px;
+        font-size: 8px;
+    }
 
     border: 1px solid $home_link_color;
     color: $home_link_color;

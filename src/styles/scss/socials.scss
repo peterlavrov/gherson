@@ -14,6 +14,10 @@
     width: 55px;
   }
 
+  @include phones {
+    width: 40px;
+  }
+
   &__list {
     display: flex;
     flex-direction: column;
@@ -30,6 +34,11 @@
     @include tablets {
       margin-bottom: 14px;
     }
+
+    @include phones {
+      margin-bottom: 5px;
+    }
+
     &:last-child {
       margin-bottom: 0;
     }
@@ -44,6 +53,11 @@
       @include tablets {
         font-size: 12px;
       }
+      
+      @include tablets {
+        font-size: 9px;
+      }
+
       color: $home_socials_color;
       &:hover {
         color: $delimeter_color;
@@ -69,11 +83,19 @@
     margin-bottom: 18px;
   }
 
+  @include phones {
+    margin-bottom: 16px;
+  }
+
   &__item {
     margin-right: 24px;
     
     @include desktop_hd {
       margin-right: 18px;
+    }
+
+    @include phones {
+      margin-right: 14px;
     }
 
     &:last-child {
@@ -89,6 +111,9 @@
       }
       @include tablets {
         font-size: 12px;
+      }
+      @include phones {
+        font-size: 11px;
       }
 
       &:hover {
@@ -109,6 +134,14 @@
     }
     a.feedback-popup__link {
       font-family: 'FA5BRegular';
+
+      @include tablets {
+        font-size: 14px;
+      }
+
+      @include phones {
+        font-size: 12px;
+      }
     }
 
   }
