@@ -1,5 +1,6 @@
 // инициализация слайдера
-
+alert(document.documentElement.clientWidth);
+alert(window.innerWidth);
 $(
   function() {
     $('.slider-slides__list').slick({
