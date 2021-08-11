@@ -75,6 +75,9 @@
     top: 34px;
   }
 
+  @include tablets {
+    top: 26px;
+  }
   @include phones {
     top: 26px;
   }
@@ -136,6 +139,9 @@
     height: 10px;
   }
 
+  @include tablets {
+    top: 7px;
+  }
   @include phones {
     top: 7px;
   }

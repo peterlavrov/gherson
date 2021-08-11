@@ -1771,6 +1771,11 @@ p {
     top: 34px;
   }
 }
+@media screen and (max-width: 767px) {
+  .new-select__list {
+    top: 26px;
+  }
+}
 @media screen and (max-width: 575px) {
   .new-select__list {
     top: 26px;
@@ -1841,6 +1846,11 @@ p {
     font-size: 10px;
     width: 10px;
     height: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .new-select:after {
+    top: 7px;
   }
 }
 @media screen and (max-width: 575px) {
